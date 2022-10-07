@@ -1,0 +1,105 @@
+@import 'utility/colors';
+
+.footer {
+  height: 30vw;
+  display: grid;
+  grid-template-rows: 7fr 1fr;
+
+  &_top {
+    background-color: $mid-blue;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+  }
+
+  &_bottom {
+    background-color: $dark-blue;
+    display: flex;
+    justify-content: space-around;
+    color: $light-blue;
+  }
+}
+
+.mapContainer
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  iframe
+  {
+    width: 90%;
+    height: 80%;
+  }
+}
+
+.adress
+{
+  font-size: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  ul
+  {
+    list-style-type: none;
+  }
+
+  p
+  {
+    margin: 0.5vw;
+  }
+}
+
+.links
+{
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+
+  .link
+  {
+    font-size: 24px;
+    text-decoration: none;
+    color: $mid-blue;
+    transition: all 0.3s;
+  }
+
+  .link:hover
+  {
+    transition: all 0.2s;
+    color: $light-blue;
+  }
+}
+
+@media (max-width: 576px)
+{
+  .footer
+  {
+    p 
+    {
+      font-size: 12px;
+    }
+  }
+
+  .mapContainer
+  {
+    iframe
+    {
+      width: 95%;
+    }
+  }
+
+  .adress
+  {
+    ul
+    {
+      padding: 0;
+    }
+  }
+
+  .link
+  {
+      font-size: 12px;
+  }
+}
+

@@ -1,0 +1,119 @@
+@import 'utility/colors';
+
+.nav {
+  font-family: Univers;
+  z-index: 2;
+  display: flex;
+  padding: 0 25vw;
+  justify-content: space-evenly;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  height: 5vh;
+  background-color: $dark-blue;
+}
+
+.burger_button
+{
+  background: none;
+  border: none;
+
+  &_image
+  {
+    cursor: pointer;
+  }
+}
+
+.nav_burger
+{
+  padding: 0 5vw;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Univers;
+  z-index: 2;
+  position: sticky;
+  top: -1vw;
+  height: 5em;
+  background-color: $dark-blue;
+}
+
+.nav_burger > button
+{
+  align-self: flex-end;
+}
+
+.nav_burger_container
+{
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 4em;
+  gap: 1vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-blue;
+  height: 0vh;
+  transition: height 1s;
+}
+
+.nav_burger_container > .link
+{
+  opacity: 0;
+  transition: opacity 0.2s;
+  pointer-events: none;
+}
+
+.divider {
+  width: 1px;
+  height: 2rem;
+  background-color: $mid-blue;
+}
+
+.link {
+  font-size: 24px;
+  text-decoration: none;
+  color: $mid-blue;
+  transition: all 0.3s;
+}
+
+.link:hover
+{
+  transition: all 0.2s;
+  color: $light-blue;
+}
+
+@media (max-width: 1000px) 
+{
+  .nav
+  {
+    padding: 0 5vw;
+  }
+}
+
+@media (max-width: 576px)
+{
+  .nav_burger
+  {
+    display: flex;
+  }
+
+  .nav_burger_container_show
+  {
+    height: 20em;
+    padding: 1em 1em;
+  }
+
+  .nav_burger_container_show > .link
+  {
+    opacity: 100;
+    transition: opacity 3s;
+    pointer-events: auto;
+  }
+
+  .nav
+  {
+    display: none;
+  }
+}

@@ -1,0 +1,79 @@
+@import 'utility/colors';
+
+.container
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.panel
+{
+    display: flex;
+}
+
+.error
+{
+    color: red;
+    margin-top: 5vw;
+}
+
+.inputForm
+{
+    font-size: 24px;
+    margin-right: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input, textarea
+    {
+        margin-bottom: 5vh;
+        min-height: 2em;
+        font-size: 18px;
+        color: $dark-blue;
+    }
+    
+    button
+    {
+        max-width: 100px;
+    }
+}
+
+.tabs
+{
+    font-size: 38px;
+    display: flex;
+    gap: 5vw;
+
+    h2
+    {
+        font-weight: normal;
+        color: $mid-blue;
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+    }
+
+    input:checked~h2 {
+        color: $dark-blue;
+    }
+}
+
+.services
+{
+    background-color: $mid-blue;
+    padding: 2vw;
+
+    
+    max-height: 75vh;
+    overflow-y: scroll;
+
+    ul
+    {
+        list-style-type: none;
+        padding: 0;
+    }
+}

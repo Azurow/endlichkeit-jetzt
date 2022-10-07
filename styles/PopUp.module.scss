@@ -1,0 +1,57 @@
+@import 'utility/colors';
+
+.container
+{
+    position: fixed;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    background-color: #003b5d80;
+}
+
+.open
+{
+    display: flex;
+    animation: fadeIn 0.5s;
+}
+
+.modal
+{
+    color: $light-blue;
+    border-radius: 2em;
+    padding: 2vw;
+    max-height: 65vh;
+    overflow-y: scroll;
+    width: 35vw;
+    background-color: $dark-blue;
+    
+}
+
+@media (max-width: 1199.98px) { 
+    .modal
+    {
+        width: 65vw;
+    }
+}
+
+@media (max-width: 575.98px)
+{  
+    .modal
+    {
+        padding: 0vw 5vw;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

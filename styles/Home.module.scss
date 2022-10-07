@@ -1,0 +1,39 @@
+@import 'utility/colors';
+
+.about {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 5vw;
+}
+
+.main {
+  width: 100%;
+  max-width: 800px;
+
+  .image {
+    margin: 5vh 0;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+
+
+// Medium devices (tablets, 768px and down)
+@media (max-width: 768px) 
+{
+  .about {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 0.5fr;
+    height: min-content;
+  }
+
+  .news
+  {
+    height: max-content;
+  }
+  
+}
+
