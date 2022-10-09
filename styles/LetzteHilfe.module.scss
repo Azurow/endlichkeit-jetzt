@@ -1,0 +1,60 @@
+.description
+{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10vw;
+
+    &_aside
+    {
+        justify-content: center;
+        display: flex;
+        gap: 1vw;
+        flex-direction: column;
+    }
+}
+
+
+.contents
+{
+    margin-top: 5vw;
+    gap: 10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &_list
+    {
+        li
+        {
+            font-size: 32px;
+            margin-bottom: 1vw;
+        }
+
+        list-style-position: outside;
+        
+        list-style-type: decimal;
+    }
+
+    &_image
+    {
+        position: relative;
+        height: 20vw;
+        width: 20vw;
+        background-color: antiquewhite;
+    }
+}
+
+.carousel_container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.image
+{
+    background-color: antiquewhite;
+    height: 10vw;
+    width: 15vw;
+}

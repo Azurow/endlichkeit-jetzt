@@ -1,0 +1,22 @@
+.carousel_container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel_image
+{
+    opacity: 0%;
+    transition: opacity 1s;
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    background-color: antiquewhite;
+}
+
+.current
+{
+    opacity: 100%;
+}
