@@ -1,3 +1,5 @@
+@import 'utility/colors';
+
 .description
 {
     display: grid;
@@ -12,7 +14,6 @@
         flex-direction: column;
     }
 }
-
 
 .contents
 {
@@ -33,14 +34,6 @@
         
         list-style-type: decimal;
     }
-
-    &_image
-    {
-        position: relative;
-        height: 20vw;
-        width: 20vw;
-        background-color: antiquewhite;
-    }
 }
 
 .carousel_container
@@ -54,7 +47,8 @@
 
 .image
 {
-    background-color: antiquewhite;
-    height: 10vw;
-    width: 15vw;
+    position: relative;
+    background-color: $dark-blue;
+    height: 25vh;
+    width: 20vw;
 }

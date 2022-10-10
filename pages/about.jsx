@@ -10,7 +10,7 @@ export default function about() {
             <ul className={styles.personList}>
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image src={'/images/claudia.jpg'} width={400} height={600}/>
+                        <Image src={'/images/ueber-uns/claudia.jpg'} width={400} height={600}/>
                     </div>
                     <div className={styles.person_description}>
                         <h2>Claudia Henrich</h2>
@@ -23,7 +23,7 @@ export default function about() {
 
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image src={'/images/iris.jpg'} width={400} height={600}/>
+                        <Image src={'/images/ueber-uns/iris.jpg'} width={400} height={600}/>
                     </div>
                     <div className={styles.person_description}>
                         <h2>Iris Rose</h2>
@@ -37,7 +37,7 @@ export default function about() {
 
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image src={'/images/annika.jpg'} width={400} height={600}/>
+                        <Image src={'/images/ueber-uns/annika.jpg'} width={400} height={600}/>
                     </div>
                     <div className={styles.person_description}>
                         <h2>Annika</h2>

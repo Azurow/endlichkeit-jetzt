@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 import styles from '../styles/LetzteHilfe.module.scss'
 
 import PageContainer from '../components/PageContainer'
@@ -19,8 +20,22 @@ export default function LetzteHilfe() {
             </div>
             
             <aside className={styles.description_aside}>
-                <div className={styles.image}></div>
-                <div className={styles.image}></div>
+                <div className={styles.image}>
+                    <Image
+                    src={"/images/letzte-hilfe/text-1.JPG"}
+                    layout="fill"
+                    objectFit='cover'
+                    quality={100}
+                    />
+                </div>
+                <div className={styles.image}>
+                    <Image
+                        src={"/images/letzte-hilfe/text-2.JPG"}
+                        layout="fill"
+                        objectFit='cover'
+                        quality={100}
+                        />                    
+                </div>
             </aside>
         </section>
 

@@ -32,13 +32,13 @@ export default function Navbar() {
         <button onClick={toggleMenu} className={styles.burger_button}>
           {showMenu ? 
           <Image className={styles.burger_button_image}
-            src={'/images/burger-menu-close.png'}
+            src={'/images/utils/burger-menu-close.png'}
             width="25px"
             height="25px"
           />
           :
           <Image className={styles.burger_button_image}
-            src={'/images/burger-menu.png'}
+            src={'/images/utils/burger-menu.png'}
             width="25px"
             height="25px"
           />

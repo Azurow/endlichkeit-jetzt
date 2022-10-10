@@ -21,7 +21,7 @@ export default function Home() {
 
           <div className={styles.image}>
             <Image
-            src={'/images/main-img.jpg'}
+            src={'/images/start/text.jpg'}
             width="1600px"
             height="920px"
             />

@@ -9,7 +9,7 @@ export default function PageContainer({ children }) {
   return (
     <>
       <header className={styles.header}>
-          <Image src={'/images/logo.png'}
+          <Image src={'/images/utils/logo.png'}
             width={268.5}
             height={400}
             quality={100}

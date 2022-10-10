@@ -50,6 +50,7 @@
 
     &_sub {
         font-size: 32px;
+        width: 100%;
 
         ul {
             text-align: center;
@@ -67,6 +68,11 @@
             text-align: left;
             transition: all 0.25s;
             cursor: pointer;
+
+            h3
+            {
+                width: 100%;
+            }
 
             &:hover
             {
