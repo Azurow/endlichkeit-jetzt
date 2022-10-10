@@ -1,4 +1,5 @@
 import {React} from 'react'
+import Head from 'next/head';
 import { useRouter } from 'next/dist/client/router';
 import { auth} from '../utils/firebase'
 import {signInWithEmailAndPassword } from 'firebase/auth'
@@ -37,6 +38,11 @@ export default function login() {
 
     return (
         <PageContainer>
+            <Head>
+                <title>Login | Endlichkeit Jetzt</title>
+                <meta name="robots" content="noindex, nofollow"></meta>
+                <meta charSet="UTF-8"></meta>
+            </Head>
             <div className={styles.container}>
                 <h1>Bitte melde dich an, bevor du das Adminportal verwendest.</h1>
                 <form onSubmit={(e) => handleSubmit(e)}>

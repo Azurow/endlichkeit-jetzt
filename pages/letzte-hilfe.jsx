@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/LetzteHilfe.module.scss'
 
@@ -9,6 +10,13 @@ import Carousel from '../components/Carousel'
 export default function LetzteHilfe() {
   return (
     <PageContainer>
+        <Head>
+            <title>Letzte Hilfe | Endlichkeit Jetzt</title>
+            <meta name="description" content="Angebote im Thema Letzte Hilfe von Endlichkeit Jetzt"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <meta charSet="UTF-8"></meta>
+        </Head>
+
         <h2>Letzte Hilfe - Am Ende wissen, wie es geht </h2>
 
         <section className={styles.description}>

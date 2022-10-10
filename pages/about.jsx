@@ -1,11 +1,18 @@
 import React from 'react'
 import Image from 'next/image';
+import Head from 'next/head';
 import PageContainer from "../components/PageContainer";
 import styles from "../styles/About.module.scss"
 
 export default function about() {
   return (
     <PageContainer>
+        <Head>
+            <title>Über uns | Endlichkeit Jetzt</title>
+            <meta name="description" content="Über das Team von Endlichkeit Jetzt"></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <meta charSet="UTF-8"></meta>
+      </Head>
         <main>
             <ul className={styles.personList}>
                 <li className={styles.person}>

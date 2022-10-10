@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Head from 'next/head'
 import News from '../components/News'
 import PageContainer from '../components/PageContainer'
 import PopUp from '../components/PopUp'
@@ -9,6 +10,12 @@ export default function Home() {
 
   return(
     <PageContainer>
+      <Head>
+            <title>Endlichkeit Jetzt</title>
+            <meta name="description" content="Zentrum für Sterbe-, Tod- und Trauerbegleitungen."></meta>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
+            <meta charset="UTF-8"></meta>
+      </Head>
       <section className={styles.about}>
         <main className={styles.main}>
           <h2>Wir sind Endlichkeit.</h2>
