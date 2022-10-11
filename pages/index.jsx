@@ -28,6 +28,7 @@ export default function Home() {
 
           <div className={styles.image}>
             <Image
+            alt='Bild des Endlichkeits-Teams'
             src={'/images/start/text.jpg'}
             width="1600px"
             height="920px"

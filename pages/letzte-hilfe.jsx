@@ -30,6 +30,7 @@ export default function LetzteHilfe() {
             <aside className={styles.description_aside}>
                 <div className={styles.image}>
                     <Image
+                    alt='Post-Its'
                     src={"/images/letzte-hilfe/text-1.JPG"}
                     layout="fill"
                     objectFit='cover'
@@ -38,6 +39,7 @@ export default function LetzteHilfe() {
                 </div>
                 <div className={styles.image}>
                     <Image
+                        alt='Textmarker'
                         src={"/images/letzte-hilfe/text-2.JPG"}
                         layout="fill"
                         objectFit='cover'

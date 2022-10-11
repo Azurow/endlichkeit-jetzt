@@ -22,6 +22,7 @@ export default function Carousel() {
     <div className={styles.carousel_container}>
         <div className={`${styles.carousel_image} ${imageCounter === 1 ? styles.current : ""}`}>
             <Image
+            alt='Bildercollage'
             src={"/images/letzte-hilfe/carousel-1.JPG"}
             layout="fill"
             objectFit='cover'
@@ -30,6 +31,7 @@ export default function Carousel() {
         </div>
         <div className={`${styles.carousel_image} ${imageCounter === 2 ? styles.current : ""}`}>
             <Image
+            alt='Bildercollage'
             src={"/images/letzte-hilfe/carousel-2.JPG"}
             layout="fill"
             objectFit='cover'
@@ -38,6 +40,7 @@ export default function Carousel() {
         </div>
         <div className={`${styles.carousel_image} ${imageCounter === 3 ? styles.current : ""}`}>
             <Image
+            alt='Bildercollage'
             src={"/images/letzte-hilfe/carousel-3.JPG"}
             layout="fill"
             objectFit='cover'

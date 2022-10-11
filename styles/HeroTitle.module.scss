@@ -33,7 +33,7 @@
 
     h2
     {
-        margin-top: -5vh;
+        margin-top: -4vh;
         opacity: 0;
         animation: fadeIn 2s ease-out forwards 7.75s;
         
@@ -71,28 +71,13 @@
 .z_1 {animation: strokeOffset 1s ease-in forwards 8s;}
 .t_3 {animation: strokeOffset 2s ease-out forwards 8.75s;}
 
-@media (max-width : 1024px) 
-{
-  .title
-  {
-      width: 80%;
-      margin: 0 10vw;
-  }
-}
-
 @media (max-width : 700px) 
 {
   .title
   {
-    width: 100%;
     h2
     {
-        margin-top: -5vw;
-    }
-
-    svg
-    {
-        width: 60vw;
+        margin-top: -3vw;
     }
   }
 }
