@@ -21,7 +21,7 @@ export default function Footer() {
               <p>60385 Frankfurt am Main</p>
             </li>
             <li>
-              <p>Mobil 0173 78479230</p>
+              <p>Tel 069 40586207</p>
             </li>
             <li>
               <p>info@endlichkeit.jetzt</p>

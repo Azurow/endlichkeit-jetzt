@@ -5,6 +5,7 @@ import PageContainer from '../components/PageContainer'
 import PopUp from '../components/PopUp'
 import Services from '../components/Services'
 import styles from '../styles/Home.module.scss'
+import Grid from '../components/Grid'
 
 export default function Home() {
 
@@ -16,6 +17,7 @@ export default function Home() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <meta charset="UTF-8"></meta>
       </Head>
+
       <section className={styles.about}>
         <main className={styles.main}>
           <h2>Wir sind Endlichkeit.</h2>
@@ -30,8 +32,8 @@ export default function Home() {
             <Image
             alt='Bild des Endlichkeits-Teams'
             src={'/images/start/text.jpg'}
-            width="1600px"
-            height="920px"
+            layout='fill'
+            objectFit='cover'
             />
           </div>
           <p>Das umfassende Spektrum unserer Angebote reicht von
@@ -47,6 +49,8 @@ export default function Home() {
 
         <News/>
       </section>
+
+      <Grid />
       
       <Services/>
     </PageContainer>)

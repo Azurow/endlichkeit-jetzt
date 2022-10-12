@@ -82,7 +82,7 @@ export default function HeroTitle() {
               </mask>
             </g>
         </svg>
-        <h2>Zentrum für Sterben - Tod - Trauer</h2>
+        <h2>ZENTRUM FÜR STERBEN ･ TOD ･ TRAUER</h2>
       </div>
   )
 }

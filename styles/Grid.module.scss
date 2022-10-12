@@ -1,0 +1,127 @@
+@import 'utility/colors';
+
+
+.grid {  
+    gap: 0.15vw;
+    width: 100vw;
+    height: 75vh;
+    margin: 5vw -10vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+      "Picture-1 Picture-1 Picture-3 Picture-3 Picture-5 Picture-6 Picture-6"
+      "Picture-2 Picture-2 Picture-3 Picture-3 Picture-5 Picture-6 Picture-6"
+      "Picture-2 Picture-2 Picture-4 Picture-4 Picture-4 Picture-6 Picture-6";
+  }
+
+  
+
+  .Picture
+  {
+    overflow: scroll;
+    padding: 0.5vw;
+    background-color: $dark-blue;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+  }
+
+  .Picture::-webkit-scrollbar
+  {
+    display: none;
+  }
+
+  .Picture > h2
+  {
+    margin: 0;
+    opacity: 0%;
+    z-index: 1;
+  }
+
+  .Picture > p
+  {
+    opacity: 0%;
+    z-index: 1;
+  }
+
+  .Picture:hover > h2
+  {
+    color: $light-blue;
+    opacity: 100%;
+  }
+
+  .Picture:hover > p
+  {
+    color: $light-blue;
+    opacity: 100%;
+  }
+
+  .Picture:hover > span > img
+  {
+    transition: all 0.25s ease-out;
+    opacity: 20%;
+    cursor: pointer;
+  }
+  
+  .Picture1 { position: relative; grid-area: Picture-1; }
+  
+  .Picture2 { position: relative; grid-area: Picture-2; }
+  
+  .Picture3 { position: relative; grid-area: Picture-3; }
+  
+  .Picture4 { position: relative; grid-area: Picture-4; }
+  
+  .Picture5 { position: relative; grid-area: Picture-5; }
+  
+  .Picture6 { position: relative; grid-area: Picture-6; }
+  
+  @media (min-width: 2000px) 
+{
+  .grid 
+  {
+    margin: 5vw -20vw;
+  }
+}
+
+@media (max-width: 992px) 
+{
+  .grid {
+    margin: 5vw -5vw;
+    
+    grid-template-areas:
+      "Picture-1 Picture-1 Picture-3 Picture-3 Picture-3 Picture-6 Picture-6"
+      "Picture-2 Picture-2 Picture-3 Picture-3 Picture-3 Picture-6 Picture-6"
+      "Picture-2 Picture-2 Picture-4 Picture-4 Picture-4 Picture-6 Picture-6";
+  }
+
+  .Picture5 { display: none;}
+}
+
+@media (max-width: 768px) 
+{
+  .grid {
+    margin: 5vw -10vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
+  }
+
+  .Picture6 { display: none;}
+}
+
+@media (max-width: 576px) 
+{
+  
+  .grid {
+    margin: 15vw -5vw;
+  }
+}
+
+@media (max-width: 450px) 
+{
+  
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+  }
+}

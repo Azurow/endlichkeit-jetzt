@@ -15,16 +15,15 @@
 .image
 {
   position: relative;
-  width: 20vw;
-  height: 30vw;
+  width: 15vw;
+  height: 25vw;
+  margin-right: -3vw;
+  margin-bottom: 5vw;
 }
 
-.logo
-{
-    height: 50px;
-}
 
 .container {
+  overflow: hidden;
   padding: 5vw 10vw 5vw 10vw;
   height: auto;
   font-family: 'Myriad Pro', sans-serif;

@@ -22,14 +22,19 @@
 
 .modal
 {
-    color: $light-blue;
+    color: $dark-blue;
     border-radius: 2em;
     padding: 2vw;
     max-height: 65vh;
     overflow-y: scroll;
     width: 35vw;
-    background-color: $dark-blue;
+    background-color: $light-blue;
     
+}
+
+.modal::-webkit-scrollbar
+{
+    display: none;
 }
 
 @media (max-width: 1199.98px) { 
