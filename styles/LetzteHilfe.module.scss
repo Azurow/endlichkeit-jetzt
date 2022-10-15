@@ -1,54 +1,149 @@
 @import 'utility/colors';
 
-.description
-{
+.nav_button {
+    display: inline-block;
+    position: relative;
+    margin: -2vw 2vw 1vw 0;
+    padding: 0.5vw 0.75vw;
+    opacity: 75%;
+    background-color: $light-blue;
+    color: $dark-blue;
+    border: solid 2px $dark-blue;
+    border-radius: 20vh;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+.nav_button:hover {
+    opacity: 100%;
+}
+
+.nav_button>input {
+    opacity: 0%;
+    position: absolute;
+}
+
+.nav_button:has(> input:checked) {
+    opacity: 100%;
+    background-color: $dark-blue;
+    color: $light-blue;
+}
+
+.nav_button>h3 {
+    margin: 0;
+    font-size: 24px;
+}
+
+
+.shown {
+    display: block;
+    animation: fadeIn 0.5s ease-out forwards;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+.description {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 10vw;
 
-    &_aside
-    {
+    &_aside {
         justify-content: center;
         display: flex;
         gap: 1vw;
         flex-direction: column;
     }
+
+    &_text
+    {
+        height: min-content;
+    }
 }
 
-.contents
-{
+.contents {
     margin-top: 5vw;
     gap: 10vw;
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    &_list
-    {
-        li
-        {
+    &_list {
+        li {
             font-size: 32px;
             margin-bottom: 1vw;
         }
 
         list-style-position: outside;
-        
+
         list-style-type: decimal;
     }
 }
 
-.carousel_container
-{
+.carousel_container {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-
-
-.image
-{
+.image {
     position: relative;
     background-color: $dark-blue;
-    height: 25vh;
-    width: 20vw;
+    height: 20em;
+    width: 25em;
 }
+
+@media (max-width: 1200px) 
+{
+    .description
+    {
+        gap: 1vw;
+        display: flex;
+        flex-direction: column;
+
+        &_aside
+        {
+            flex-direction: row;
+        }
+    }
+}
+
+@media (max-width: 768px) 
+{
+    .contents
+    {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1.5fr 1fr;
+
+        &_text
+        {
+            order: -1;
+        }
+    }
+}
+
+@media (max-width: 576px) 
+{
+    .nav_button
+    {
+        margin-bottom: 5vw;
+    }
+
+    .description_aside
+    {
+        flex-direction: column;
+        align-items: center;
+        max-height: 100vw;
+    }
+}
+

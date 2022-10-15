@@ -1,28 +1,23 @@
-@keyframes strokeOffset 
-{
-    to
-    {
+@keyframes strokeOffset {
+    to {
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes fadeIn {
-    to
-    {
+    to {
         opacity: 100%;
     }
 }
 
 @keyframes centerTitle {
-    to
-    {
+    to {
         transform: translateX(0vw);
     }
 }
 
 
-.title
-{
+.title {
     z-index: 2;
     width: 50%;
     height: auto;
@@ -31,13 +26,12 @@
     align-items: center;
     justify-content: center;
 
-    h2
-    {
-        margin-top: -5vh;
+    h2 {
+        margin-top: -4.5vw;
         opacity: 0;
         animation: fadeIn 2s ease-out forwards 7.75s;
         font-family: Univers;
-        
+
         font-size: 1.9vw;
         width: 100%;
         text-align: left;
@@ -45,8 +39,7 @@
 }
 
 
-.mask
-{
+.mask {
     fill: rgb(0, 0, 0);
     stroke: #fff;
     stroke-width: 10px;
@@ -72,13 +65,10 @@
 .z_1 {animation: strokeOffset 1s ease-in forwards 8s;}
 .t_3 {animation: strokeOffset 2s ease-out forwards 8.75s;}
 
-@media (max-width : 700px) 
-{
-  .title
-  {
-    h2
-    {
-        margin-top: -3vw;
+@media (max-width : 700px) {
+    .title {
+        h2 {
+            margin-top: -3vw;
+        }
     }
-  }
 }

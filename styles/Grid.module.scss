@@ -17,8 +17,6 @@
       "Picture-2 Picture-2 Picture-4 Picture-4 Picture-4 Picture-6 Picture-6";
   }
 
-  
-
   .Picture
   {
     overflow: scroll;
@@ -49,12 +47,14 @@
 
   .Picture:hover > h2
   {
+    transition: all 0.25s ease-out;
     color: $light-blue;
     opacity: 100%;
   }
 
   .Picture:hover > p
   {
+    transition: all 0.25s ease-out;
     color: $light-blue;
     opacity: 100%;
   }
