@@ -15,7 +15,7 @@ export default function Home() {
             <title>Endlichkeit Jetzt</title>
             <meta name="description" content="Zentrum für Sterbe-, Tod- und Trauerbegleitungen."></meta>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-            <meta charset="UTF-8"></meta>
+            <meta charSet="UTF-8"></meta>
       </Head>
 
       <section className={styles.about}>

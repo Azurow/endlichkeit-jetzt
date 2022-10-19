@@ -69,7 +69,7 @@ export default function Services() {
                     <article className={styles.services_article}>
                         <h3>{Object.keys(article).length === 0 ? "Bitte wähle ein Angebot aus." : article.title}</h3>
                         <p>{article.description}</p>
-                        {Object.keys(article).length !== 0 && <Button text="Buchen" />}
+                        {Object.keys(article).length !== 0 && <Button text="Anfragen" />}
                     </article>
                 </div>
 

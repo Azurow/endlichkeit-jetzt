@@ -19,17 +19,17 @@
 
   .Picture
   {
-    overflow: scroll;
+    overflow: hidden;
     padding: 0.5vw;
     background-color: $dark-blue;
     display: flex;
     flex-direction: column;
     cursor: pointer;
-  }
 
-  .Picture::-webkit-scrollbar
-  {
-    display: none;
+    &::-webkit-scrollbar
+    {
+      display: none;
+    }
   }
 
   .Picture > h2

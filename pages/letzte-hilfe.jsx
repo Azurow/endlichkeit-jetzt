@@ -77,7 +77,7 @@ export default function LetzteHilfe() {
                         <li>Leiden lindern</li>
                         <li>Abschied nehmen</li>
                     </ul>
-                    <Button text={"Buchen"} />
+                    <Button text={"Anfragen"} />
                     </div>
             </section>
         </div>

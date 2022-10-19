@@ -27,8 +27,8 @@ export default function Grid() {
                 />
             </div>
             <div className={`${styles.Picture3} ${styles.Picture}`}>
-                <h2>Weglaufen</h2>
-                <p>Natur und Bewegung - eine Kraftquelle. Sie entspannt, beruhigt, regt das Immunsystem an, ist Balsam für die Seele. Mit jemandem reden, sich austauschen, schweigen, aber auch lachen, die Natur riechen, Tiere und Pflanzen beobachten, Wind und Wetter erleben… All das beruhigt die Gedanken und fokussiert uns auf den Augenblick. </p>
+                <h2>Trauercafé</h2>
+                <p>Im Café menthe </p>
                 <Image
                     alt='Bild des Endlichkeits-Teams'
                     src={'/images/start/grid-3.jpg'}
