@@ -23,7 +23,7 @@ export default function Carousel() {
         <div className={`${styles.carousel_image} ${imageCounter === 1 ? styles.current : ""}`}>
             <Image
             alt='Bildercollage'
-            src={"/images/letzte-hilfe/carousel-1.JPG"}
+            src={"/images/letzte-hilfe/carousel-1.jpg"}
             layout="fill"
             objectFit='cover'
             quality={100}
@@ -32,7 +32,7 @@ export default function Carousel() {
         <div className={`${styles.carousel_image} ${imageCounter === 2 ? styles.current : ""}`}>
             <Image
             alt='Bildercollage'
-            src={"/images/letzte-hilfe/carousel-2.JPG"}
+            src={"/images/letzte-hilfe/carousel-2.jpg"}
             layout="fill"
             objectFit='cover'
             quality={100}
@@ -41,7 +41,7 @@ export default function Carousel() {
         <div className={`${styles.carousel_image} ${imageCounter === 3 ? styles.current : ""}`}>
             <Image
             alt='Bildercollage'
-            src={"/images/letzte-hilfe/carousel-3.JPG"}
+            src={"/images/letzte-hilfe/carousel-3.jpg"}
             layout="fill"
             objectFit='cover'
             quality={100}
