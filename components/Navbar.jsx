@@ -47,9 +47,6 @@ export default function Navbar() {
       </nav>
       <nav className={`${styles.nav_burger_container} ${showMenu ? styles.nav_burger_container_show : ""}`}>
         <Link href={'/'}><a className={styles.link}>Start</a></Link>
-        <Link href={'/'}><a className={styles.link}>Sterben</a></Link>
-        <Link href={'/'}><a className={styles.link}>Tod</a></Link>
-        <Link href={'/'}><a className={styles.link}>Trauer</a></Link>
         <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
         <Link href={'/team'}><a className={styles.link}>Über Uns</a></Link>
         <Link href={'/kontakt'}><a className={styles.link}>Kontakt</a></Link>

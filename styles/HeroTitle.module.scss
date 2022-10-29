@@ -19,7 +19,7 @@
 
 .title {
     z-index: 2;
-    width: 50%;
+    width: 49%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -27,12 +27,12 @@
     justify-content: center;
 
     h2 {
-        margin-top: -4.5vw;
+        margin-top: -3vw;
         opacity: 0;
         animation: fadeIn 2s ease-out forwards 7.75s;
         font-family: Univers;
 
-        font-size: 1.9vw;
+        font-size: 2vw;
         width: 100%;
         text-align: left;
     }
