@@ -57,7 +57,7 @@ export default function Services() {
                                 <li onChange={onSubNavChange} key={i.title}>
                                     <label className={styles.services_nav_sub_tab}>
                                         <input type="radio" name="nav_sub" value={i.title} />
-                                        <h3>{i.title}</h3>
+                                        <h3>･ {i.title} </h3>
                                     </label>
                                 </li>
                             ))}
@@ -67,7 +67,7 @@ export default function Services() {
 
                 <div className={styles.sub}>
                     <article className={styles.services_article}>
-                        <h3>{Object.keys(article).length === 0 ? "Bitte wähle ein Angebot aus." : article.title}</h3>
+                        <h3>{Object.keys(article).length === 0 ? "Bitte wählen Sie ein Angebot aus." : article.title}</h3>
                         <p>{article.description}</p>
                         {Object.keys(article).length !== 0 && <Button text="Anfragen" />}
                     </article>
@@ -81,6 +81,6 @@ export default function Services() {
 
 export function Divider() {
     return (
-        <div className={styles.divider} />
+        <div className={styles.divider}>･</div>
     )
 }

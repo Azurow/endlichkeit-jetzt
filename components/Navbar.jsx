@@ -16,11 +16,7 @@ export default function Navbar() {
       <nav className={styles.nav}>
         <Link href={'/'}><a className={styles.link}>Start</a></Link>
         <Divider />
-        <Link href={'/#services'}><a className={styles.link}>Sterben</a></Link>
-        <Divider />
-        <Link href={'/#services'}><a className={styles.link}>Tod</a></Link>
-        <Divider />
-        <Link href={'/#services'}><a className={styles.link}>Trauer</a></Link>
+        <Link href={'/#service'}><a className={styles.link}>Unsere Angebote</a></Link>
         <Divider />
         <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
         <Divider />

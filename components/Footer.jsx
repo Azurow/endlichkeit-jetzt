@@ -13,6 +13,7 @@ export default function Footer() {
           <ul>
             <li>
               <p>endlichkeit.jetzt</p>
+              <p>Zentrum für Sterben･Tod･Trauer</p>
             </li>
             <li>
               <p>Spessartstraße 12</p>
