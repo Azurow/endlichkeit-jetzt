@@ -1,6 +1,7 @@
 @import 'utility/colors';
 
 .footer {
+  word-break: break-all;
   height: 30vw;
   display: grid;
   grid-template-rows: 7fr 1fr;
