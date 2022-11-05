@@ -19,7 +19,8 @@
 
   .Picture
   {
-    overflow: hidden;
+    word-break: break-all;
+    overflow-y: scroll;
     padding: 0.5vw;
     background-color: $dark-blue;
     display: flex;
@@ -41,6 +42,7 @@
 
   .Picture > p
   {
+    margin-top: 0.25vw;
     opacity: 0%;
     z-index: 1;
   }
@@ -112,7 +114,23 @@
 
 @media (max-width: 576px) 
 {
-  
+  .Picture > h2
+  {
+    font-size: 32px;
+  }
+
+  .Picture > p
+  {
+    display: none;
+  }
+
+  .Picture
+  {
+    padding: 2em;
+    align-items: center;
+    justify-content: center;
+  }
+
   .grid {
     margin: 15vw -5vw;
   }

@@ -18,9 +18,12 @@ export default function Navbar() {
         <Divider />
         <Link href={'/#service'}><a className={styles.link}>Unsere Angebote</a></Link>
         <Divider />
+        
         <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
         <Divider />
         <Link href={'/about'}><a className={styles.link}>Über Uns</a></Link>
+        <Divider />
+        <Link href={'/prices'}><a className={styles.link}>Preise</a></Link>
         <Divider />
         <Link href={'/kontakt'}><a className={styles.link}>Kontakt</a></Link>
       </nav>
