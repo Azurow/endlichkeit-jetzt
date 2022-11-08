@@ -1,0 +1,64 @@
+@import 'utility/colors';
+
+.grid
+{
+    
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid > li
+{
+    // height: min-content;
+    padding:  2.5vw 0;
+    opacity: 86%;
+    background-color: $mid-blue;
+    border-radius: 10px;
+    border: solid 2px $mid-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3
+    {
+        margin: 0;
+    }
+
+    h4
+    {
+        margin-bottom: 0.5em;
+    }
+}
+
+.grid > li:hover
+{
+    opacity: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.offerList
+{
+    padding: 0;
+    li
+    {
+        display: flex;
+        justify-content: space-between;
+
+        h4, p
+        {
+            margin: 0;
+        }
+
+        p::before
+        {
+            content: "-> ";
+        }
+    }
+}
+
+.price, .offer
+{
+    display: inline;
+}
+

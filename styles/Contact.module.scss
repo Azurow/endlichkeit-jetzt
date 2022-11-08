@@ -1,0 +1,39 @@
+.image
+{
+    position: relative;
+    width: 35vw;
+    height: 25vw;
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infos
+{
+    margin-right: 10vw;
+}
+
+@media (max-width: 900px) { 
+    
+    .container
+    {
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+
+    .image
+    {
+        position: relative;
+        width: 20em;
+        height: 15em;
+    }
+
+        .infos
+    {
+        margin: 10vw 0;
+    }
+ }

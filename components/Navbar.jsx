@@ -13,19 +13,19 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className={styles.nav}>
+      <nav id="start" className={styles.nav}>
         <Link href={'/'}><a className={styles.link}>Start</a></Link>
         <Divider />
         <Link href={'/#service'}><a className={styles.link}>Unsere Angebote</a></Link>
         <Divider />
         
-        <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
+        <Link href={'/letzte-hilfe#start'}><a className={styles.link}>Letzte Hilfe</a></Link>
         <Divider />
-        <Link href={'/about'}><a className={styles.link}>Über Uns</a></Link>
+        <Link href={'/about#start'}><a className={styles.link}>Über Uns</a></Link>
         <Divider />
-        <Link href={'/prices'}><a className={styles.link}>Preise</a></Link>
+        <Link href={'/prices#start'}><a className={styles.link}>Preise</a></Link>
         <Divider />
-        <Link href={'/kontakt'}><a className={styles.link}>Kontakt</a></Link>
+        <Link href={'/contact'}><a className={styles.link}>Kontakt</a></Link>
       </nav>
       <nav className={styles.nav_burger}>
         <button onClick={toggleMenu} className={styles.burger_button}>
@@ -47,7 +47,8 @@ export default function Navbar() {
       <nav className={`${styles.nav_burger_container} ${showMenu ? styles.nav_burger_container_show : ""}`}>
         <Link href={'/'}><a className={styles.link}>Start</a></Link>
         <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
-        <Link href={'/team'}><a className={styles.link}>Über Uns</a></Link>
+        <Link href={'/about'}><a className={styles.link}>Über Uns</a></Link>
+        <Link href={'/prices'}><a className={styles.link}>Preise</a></Link>
         <Link href={'/kontakt'}><a className={styles.link}>Kontakt</a></Link>
       </nav>
     </>

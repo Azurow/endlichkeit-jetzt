@@ -1,6 +1,7 @@
 @import 'utility/colors';
 
 .footer {
+  font-family: Univers;
   word-break: break-all;
   height: 30vw;
   display: grid;
@@ -17,7 +18,6 @@
     display: flex;
     justify-content: space-around;
     color: $light-blue;
-    font-family: Univers;
   }
 }
 

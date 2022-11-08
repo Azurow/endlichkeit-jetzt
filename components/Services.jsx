@@ -31,8 +31,8 @@ export default function Services() {
     }
 
     return (
-        <section className={styles.services} id="services">
-            <h2>Unsere Angebote</h2>
+        <section className={styles.services} >
+            <h2>Unsere Angebote zu den Themen...</h2>
             <div className={styles.services_container}>
                 <div className={styles.services_nav}>
                     <nav className={styles.services_nav_top} onChange={onTopNavChange}>

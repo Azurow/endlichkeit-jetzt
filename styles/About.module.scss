@@ -1,5 +1,8 @@
+@import 'utility/colors';
+
 .person
 {
+    align-items: center;
     display: flex;
     margin-bottom: 5vh;
 
@@ -12,29 +15,47 @@
     }
 }
 
+.divider
+{
+    border: 1px solid $mid-blue;
+    width: 50%;
+}
+
 .image
 {
-    width: 400px;
-    height: 600px;;
+    overflow: hidden;
+    width: 225px;
+    height: 300px;
 }
 
 @media (max-width: 900px) { 
+    
     .person
     {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
 
         &_description
         {
             width: 100%;
             margin: 0;
+
+            h2
+            {
+                margin: 0;
+            }
         }
+    }
+
+    .divider
+    {
+        margin: 10vw 0;
+        width: 80%;
     }
 
     .image
     {
-        width: 300px;
-        height: 500px;;
+        margin-bottom: 10vw;
     }
 
     .personList

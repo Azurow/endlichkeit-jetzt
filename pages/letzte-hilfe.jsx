@@ -20,7 +20,7 @@ export default function LetzteHilfe() {
             <meta charSet="UTF-8"></meta>
         </Head>
 
-        <h2>Letzte Hilfe - Am Ende wissen, wie es geht </h2>
+        <h2 id="title">Letzte Hilfe - Am Ende wissen, wie es geht </h2>
 
         <nav onChange={e => setOption(e.target.value)}>
             <label className={styles.nav_button}>
@@ -135,7 +135,7 @@ export default function LetzteHilfe() {
                         <li>Leiden lindern</li>
                         <li>Abschied nehmen</li>
                     </ul>
-                    <Button text={"Buchen"} />
+                    <Button text={"Anfragen"} />
                     </div>
             </section>
         </div>

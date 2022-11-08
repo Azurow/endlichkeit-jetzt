@@ -13,11 +13,12 @@ export default function about() {
             <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
             <meta charSet="UTF-8"></meta>
       </Head>
+      <h2>Über Uns</h2>
         <main>
             <ul className={styles.personList}>
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image alt='Claudia Henrich' src={'/images/ueber-uns/claudia.jpg'} width={400} height={600}/>
+                        <Image alt='Claudia Henrich' src={'/images/ueber-uns/claudia.jpg'} width={225} height={300}/>
                     </div>
                     <div className={styles.person_description}>
                         <h2>Claudia Henrich</h2>
@@ -28,9 +29,11 @@ export default function about() {
                     </div>
                 </li>
 
+                <Divider/>
+
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image alt='Iris Rose' src={'/images/ueber-uns/iris.jpg'} width={400} height={600}/>
+                        <Image alt='Iris Rose' src={'/images/ueber-uns/iris.jpg'} width={225} height={300}/>
                     </div>
                     <div className={styles.person_description}>
                         <h2>Iris Rose</h2>
@@ -42,12 +45,14 @@ export default function about() {
                     </div>
                 </li>
 
+                <Divider/>
+
                 <li className={styles.person}>
                     <div className={styles.image}>
-                        <Image alt='Annika' src={'/images/ueber-uns/annika.jpg'} width={400} height={600}/>
+                        <Image alt='Annika' src={'/images/ueber-uns/annika.jpg'} width={225} height={300}/>
                     </div>
                     <div className={styles.person_description}>
-                        <h2>Annika</h2>
+                        <h2>Annika Reuß</h2>
                         <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
@@ -57,3 +62,13 @@ export default function about() {
     </PageContainer>
   )
 }
+
+
+export function Divider() {
+  return (
+    <div className={styles.divider}>
+      
+    </div>
+  )
+}
+
