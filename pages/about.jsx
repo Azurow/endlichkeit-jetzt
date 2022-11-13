@@ -37,10 +37,10 @@ export default function about() {
                     </div>
                     <div className={styles.person_description}>
                         <h2>Iris Rose</h2>
-                        <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. 
-                        Mein Lebensmotto ist Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.
-                        Eine weitere Motivation, hier im Zentrum für Sterben, Tod und Trauer begleitend dabei zu sein, sind meine selbst gemachten und erlernten Erfahrungen mit diesem Thema.
-                        Trauer fängt nicht erst mit dem Tod an und ich möchte für Sie alle, ob jung oder alt, unterstützend da sein.
+                        <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. Mein Lebensmotto war schon immer, Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.
+Meine Erfahrungen, die ich nach dem Tod meines 2 1/2 Wochen alten Sohnes gemacht habe, von Einsamkeit über Sprachlosigkeit bis hin zur Isolation, haben den Wunsch verstärkt für Betroffene eine einfühlsame Ansprechpartnerin und Begleiterin zu sein.                                                                                                                                                                                                                                  Damals habe ich gemerkt, dass Geschwisterkinder mit ihrer Trauer und Gefühlen sehr alleine gelassen sind und ihnen gegenüber die Sprachlosigkeit noch größer ist. Das möchte ich ändern.
+Trauer fängt nicht erst mit dem Tod an und ich möchte für Sie alle, ob jung oder alt, unterstützend da sein.
+
                         </p>
                     </div>
                 </li>
@@ -53,7 +53,7 @@ export default function about() {
                     </div>
                     <div className={styles.person_description}>
                         <h2>Annika Reuß</h2>
-                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        <p>„C‘est la vie. C‘est la Scheisse…“ Ich bin Annika Reuß, Seelenbegleiterin, letzte-Wünsche-Erfüllerin, Bestatterin der Herzen und Obertrösterin. Seit 2015 schaue ich genau hin, wenn es um Endlichkeit geht und bin bei denen, die existenzielle Nöte haben: im Sterben, im Totsein, im Trauern. Unverständnis über unsere Abschieds- und Trauerkultur haben mich zu dem gebracht, was ich heute mit Sterbenden, Toten und Trauernden tue: furchterregende Ängste aushalten, Dasein, wenn sich keiner mehr traut zu kommen, Kleinig- und Großartigekeiten in Bestattungen unterbringen und Glitzer in die Trauersuppe streuen. Wenn‘s nicht mehr geht, bin ich da und begleite Sie. 
                         </p>
                     </div>
                 </li>

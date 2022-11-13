@@ -1,13 +1,27 @@
 import Link from 'next/link'
-import React from 'react'
+import React, { useState } from 'react'
 import styles from '../styles/Footer.module.scss'
 
 export default function Footer() {
+
+  const [showMap, setShowMap] = useState(false);
+
+  const handleClick = () => setShowMap(!showMap);
+
   return (
     <footer className={styles.footer}>  
       <div className={styles.footer_top}>
+
         <div className={styles.mapContainer}>
+          {showMap ? 
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2557.9134868548695!2d8.703919333261608!3d50.12534081364459!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bd0eecd66cc92f%3A0xc296724631f1abd6!2sSpessartstra%C3%9Fe%2012%2C%2060385%20Frankfurt%20am%20Main!5e0!3m2!1sde!2sde!4v1665171970707!5m2!1sde!2sde" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          :
+          <>
+            <button className={styles.button} onClick={() => handleClick()}>Karte anzeigen</button>
+            <p className={styles.subtext}>Nach Aktivieren der Kartenansicht werden Daten an den jeweiligen Anbieter übermittelt. Weitere Informationen können der Datenschutzerklärung von Google entnommen werden.</p>
+          </>
+          }
+          
         </div>
         <nav className={styles.adress}>
           <ul>

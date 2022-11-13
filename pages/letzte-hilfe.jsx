@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
+import Link from "next/link"
 import Image from 'next/image'
 import styles from '../styles/LetzteHilfe.module.scss'
 
@@ -48,13 +49,13 @@ export default function LetzteHilfe() {
                     <div className={styles.image}>
                         <Image
                         alt='Post-Its'
-                        src={"/images/letzte-hilfe/text-1.JPG"}
+                        src={"/images/letzte-hilfe/text-1.png"}
                         layout="fill"
                         objectFit='cover'
                         quality={100}
                         />
                     </div>
-                    <div className={styles.image}>
+                    {/* <div className={styles.image}>
                         <Image
                             alt='Textmarker'
                             src={"/images/letzte-hilfe/text-2.JPG"}
@@ -62,7 +63,7 @@ export default function LetzteHilfe() {
                             objectFit='cover'
                             quality={100}
                             />
-                    </div>
+                    </div> */}
                 </aside>
             </section>
             <section className={styles.contents}>
@@ -104,22 +105,16 @@ export default function LetzteHilfe() {
             
                 <aside className={styles.description_aside}>
                     <div className={styles.image}>
-                        <Image
-                        alt='Post-Its'
-                        src={"/images/letzte-hilfe/text-1.JPG"}
-                        layout="fill"
-                        objectFit='cover'
-                        quality={100}
-                        />
-                    </div>
-                    <div className={styles.image}>
-                        <Image
-                            alt='Textmarker'
-                            src={"/images/letzte-hilfe/text-2.JPG"}
-                            layout="fill"
-                            objectFit='cover'
-                            quality={100}
-                            />
+                        <Link href="https://www.letztehilfe.info">
+                            <Image
+                                alt='Post-Its'
+                                src={"/images/letzte-hilfe/text-1.png"}
+                                layout="fill"
+                                objectFit='cover'
+                                quality={100}
+                                />
+                        </Link>
+                        
                     </div>
                 </aside>
             </section>
