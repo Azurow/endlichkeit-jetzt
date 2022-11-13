@@ -1,7 +1,23 @@
 @import 'utility/colors';
-@import url('https://fonts.cdnfonts.com/css/myriad-pro');
+
+@font-face {
+  font-family: "Myriad Pro";
+  src: url('/fonts/MyriadPro-Light.woff');
+}
+
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url('/fonts/MyriadPro-Regular.woff');
+}
+
+@font-face {
+  font-family: "Univers";
+  src: url('/fonts/UniversCondensed.ttf');
+}
+
 
 body {
+  font-family: "Myriad Pro";
   background-color: $light-blue;
   margin: 0;
   padding: 0;
