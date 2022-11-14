@@ -1,3 +1,5 @@
+@import 'utility/colors';
+
 .image
 {
     position: relative;
@@ -13,16 +15,94 @@
     align-items: center;
 }
 
+.form
+{
+    width: 50%;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    background-color: $mid-blue;
+
+    input
+    {
+        max-width: 20em;
+        transition: margin 0.1s ;
+        border: none;
+        background-color: transparent;
+        border-bottom: 1px solid $dark-blue;
+        margin-bottom: 2em;
+        height: 3em;
+        font-size: 16px;
+        color: $dark-blue;
+    }
+
+    input:focus
+    {
+        outline: none;
+    }
+
+    textarea
+    {
+        margin-top: 1em;
+        resize: none;
+        background-color: $light-blue;
+        outline: none;
+        border-radius: 2em;
+        border: none;
+        padding: 1em;
+        font-size: 20px;
+        font-family: "Myriad Pro";
+    }
+
+    button
+    {
+        width: 50%;
+        margin-top: 1em;
+        padding: 0.75em;
+        border-radius: 20vh;
+        border: 0;
+        background-color: $dark-blue;
+        color: $mid-blue;
+        font-size: 18px;
+        cursor: pointer;
+        transition: all 0.3s;
+
+    }
+}
+
+.textinput
+{
+    margin-top: -2.5em;
+}
+
+.textinput:valid, .textinput:focus
+{
+    margin-top: 0;
+}
+
 .infos
 {
-    margin-right: 10vw;
+    max-width: fit-content;
+    gap: 3em;
 }
 
 @media (max-width: 900px) { 
+
+    .form
+    {
+        width: 90%;
+
+        button
+        {
+            margin: auto;
+            margin-top: 1em;
+        }
+    }
     
     .container
     {
         flex-flow: column-reverse;
+        gap: 3em;
     }
 
     .image
@@ -30,10 +110,5 @@
         position: relative;
         width: 20em;
         height: 15em;
-    }
-
-        .infos
-    {
-        margin: 10vw 0;
     }
  }
