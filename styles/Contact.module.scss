@@ -112,3 +112,19 @@
         height: 15em;
     }
  }
+
+ @media (max-width: 576px) {
+    .form
+    {
+        button
+        {
+            width: 75%;
+        }
+
+        textarea
+        {
+            font-size: 4vw;
+            border-radius: 1em;
+        }
+    }
+ }
