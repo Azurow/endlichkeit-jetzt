@@ -53,12 +53,19 @@
   }
 }
 
-
-
 @media (max-width: 576px) 
 {
   
   .container {
     padding: 5vw;
   }
+}
+
+@media (max-width: 700px) 
+{
+  .image
+  {
+    width: 23vw;
+    height: 30vw;
+  }  
 }

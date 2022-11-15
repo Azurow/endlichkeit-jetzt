@@ -52,8 +52,8 @@ export default function Footer() {
       </div>
       <div className={styles.footer_bottom}>
         <div className={styles.links}>
-          <Link href={"/"}><a href="" className={styles.link}>Impressum</a></Link>
-          <Link href={"/"}><a href="" className={styles.link}>Datenschutzerklärung</a></Link>
+          <Link href={"/legal"}><a href="" className={styles.link}>Impressum</a></Link>
+          <Link href={"/legal"}><a href="" className={styles.link}>Datenschutzerklärung</a></Link>
         </div>
       </div>
     </footer>
