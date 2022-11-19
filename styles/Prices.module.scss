@@ -57,8 +57,26 @@
     }
 }
 
+.offerContainer
+{
+    padding: 0 1em;
+}
+
+.offer
+{
+    padding-right: 1em;
+}
+
+
 .price, .offer
 {
     display: inline;
 }
 
+
+.price
+{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}

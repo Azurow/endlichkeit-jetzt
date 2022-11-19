@@ -1,10 +1,11 @@
 import React from 'react'
 import PageContainer from '../components/PageContainer'
+import styles from '../styles/Legal.module.scss'
 
 export default function legal() {
   return (
     <PageContainer>
-      <main>
+      <main className={styles.container}>
         <h2>Impressum</h2>
         <p></p>
         <h2>Umsatzsteuer</h2>

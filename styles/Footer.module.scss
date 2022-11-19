@@ -61,7 +61,7 @@
   opacity: 50%;
   font-family: "Myriad Pro";
   word-break: normal;
-  font-size: 12px;
+  font-size: 1vw;
 }
 
 .adress
@@ -103,11 +103,24 @@
   }
 }
 
+@media (max-width: 1200px) 
+{
+  .subtext
+  {
+    font-size: 1.5vw;
+  }
+}
+
 @media (max-width: 576px)
 {
+  .subtext
+  {
+    font-size: 2vw;
+  }
   .footer
   {
-    p 
+    
+    ul > li > p 
     {
       font-size: 12px;
     }
