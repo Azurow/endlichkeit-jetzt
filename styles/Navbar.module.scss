@@ -1,7 +1,7 @@
 @import 'utility/colors';
 
 .nav {
-  font-family: Univers;
+  font-family: Univers Condensed;
   z-index: 2;
   display: flex;
   padding: 0 25vw;
@@ -30,7 +30,7 @@
   display: none;
   flex-direction: column;
   justify-content: center;
-  font-family: Univers;
+  font-family: Univers Condensed;
   z-index: 2;
   position: sticky;
   top: -1vw;
@@ -45,7 +45,7 @@
 
 .nav_burger_container
 {
-  font-family: Univers;
+  font-family: Univers Condensed;
   display: flex;
   position: sticky;
   z-index: 2;
