@@ -8,6 +8,17 @@ import styles from "../styles/Login.module.scss"
 
 export default function login() {
 
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
+
     const router = useRouter();
 
     const handleSubmit = (e) =>

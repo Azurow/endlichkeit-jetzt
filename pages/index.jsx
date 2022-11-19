@@ -6,8 +6,10 @@ import PopUp from '../components/PopUp'
 import Services from '../components/Services'
 import styles from '../styles/Home.module.scss'
 import Grid from '../components/Grid'
+import { useEffect } from 'react'
 
 export default function Home() {
+
 
   return(
     <PageContainer>

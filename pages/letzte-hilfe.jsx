@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Link from "next/link"
 import Image from 'next/image'
@@ -9,6 +9,16 @@ import Button from '../components/Button'
 import Carousel from '../components/Carousel'
 
 export default function LetzteHilfe() {
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
 
     const [selectedOption, setOption] = useState(0);
 

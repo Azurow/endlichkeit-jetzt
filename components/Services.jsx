@@ -4,11 +4,6 @@ import Button from './Button'
 import { collection, getDocs } from "firebase/firestore"
 import { firestore } from '../utils/firebase';
 
-export async function getServerSideProps(context)
-{   
-    
-}
-
 export default function Services() {
 
     const [topNav, setTopNav] = useState([]);

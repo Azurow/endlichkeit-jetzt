@@ -1,15 +1,32 @@
 import React from 'react'
 import PageContainer from '../components/PageContainer'
 import styles from '../styles/Legal.module.scss'
+import { useEffect } from 'react'
 
 export default function legal() {
+
+  useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
+
   return (
     <PageContainer>
       <main className={styles.container}>
         <h2>Impressum</h2>
-        <p></p>
+        <p>Endlichkeit.jetzt GbR</p>
+        <p>Spessartstraße 12</p>
+        <p>60385 Frankfurt am Main</p>
+        <p>Telefon: 069 405 862 07</p>
+        <p>E-Mail: info (at) endlichkeit.jetzt</p>
         <h2>Umsatzsteuer</h2>
-        <p>Umsatzsteuer-Identifikationsnummer: DEXXXXXXXXXX</p>
+        <p>Umsatzsteuer-Identifikationsnummer: DE01482662584</p>
         <h2>Haftungsausschluss</h2>
         <p>Haftung für Inhalte <br />
 
@@ -25,8 +42,8 @@ Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unt
 <br /><h2>Datenschutzerklärung</h2>
         <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze ist: <br />
 
-Praxis für Physiotherapie <br />
-Claudia Henrich <br />
+Endlichkeit.jetzt GbR <br />
+Annika Reuß und Claudia Henrich <br />
 Spessartstraße 12 <br />
 60385 Frankfurt am Main <br /> <br />
 

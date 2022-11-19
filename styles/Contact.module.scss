@@ -25,15 +25,6 @@
 
     input
     {
-        max-width: 20em;
-        transition: margin 0.1s ;
-        border: none;
-        background-color: transparent;
-        border-bottom: 1px solid $dark-blue;
-        margin-bottom: 2em;
-        height: 3em;
-        font-size: 16px;
-        color: $dark-blue;
     }
 
     input:focus
@@ -43,6 +34,7 @@
 
     textarea
     {
+        margin-bottom: 2em;
         margin-top: 1em;
         resize: none;
         background-color: $light-blue;
@@ -70,9 +62,43 @@
     }
 }
 
+.resultMessage
+{
+    margin-top: 2em;
+}
+
 .textinput
 {
+    max-width: 20em;
+    transition: margin 0.1s ;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $dark-blue;
+    margin-bottom: 2em;
+    height: 3em;
+    font-size: 16px;
+    color: $dark-blue;
     margin-top: -2.5em;
+}
+
+.safetyContainer
+{
+    display: flex;
+}
+
+.safetyinput
+{
+    max-width: 7.5em;
+    transition: margin 0.1s ;
+    border: none;
+    background-color: transparent;
+    border-bottom: 1px solid $dark-blue;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    height: 3em;
+    font-size: 16px;
+    color: $dark-blue;
+    margin-top: 1em;
 }
 
 .textinput:valid, .textinput:focus

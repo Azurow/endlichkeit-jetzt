@@ -1,8 +1,21 @@
 import React from 'react'
 import PageContainer from '../components/PageContainer'
 import styles from "../styles/Prices.module.scss"
+import { useEffect } from 'react'
 
 export default function prices() {
+
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
+
   return (
     <PageContainer>
         <h2>Preiseliste</h2>

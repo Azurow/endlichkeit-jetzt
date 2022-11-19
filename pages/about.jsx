@@ -3,8 +3,19 @@ import Image from 'next/image';
 import Head from 'next/head';
 import PageContainer from "../components/PageContainer";
 import styles from "../styles/About.module.scss"
+import { useEffect } from 'react'
 
 export default function about() {
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
   return (
     <PageContainer>
         <Head>

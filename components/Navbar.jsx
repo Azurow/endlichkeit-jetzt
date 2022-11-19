@@ -19,11 +19,11 @@ export default function Navbar() {
         <Link href={'/#service'}><a className={styles.link}>Unsere Angebote</a></Link>
         <Divider />
         
-        <Link href={'/letzte-hilfe#start'}><a className={styles.link}>Letzte Hilfe</a></Link>
+        <Link href={'/letzte-hilfe'}><a className={styles.link}>Letzte Hilfe</a></Link>
         <Divider />
-        <Link href={'/about#start'}><a className={styles.link}>Über Uns</a></Link>
+        <Link href={'/about'}><a className={styles.link}>Über Uns</a></Link>
         <Divider />
-        <Link href={'/prices#start'}><a className={styles.link}>Preise</a></Link>
+        <Link href={'/prices'}><a className={styles.link}>Preise</a></Link>
         <Divider />
         <Link href={'/contact'}><a className={styles.link}>Kontakt</a></Link>
       </nav>
