@@ -1,27 +1,61 @@
 @import 'utility/colors';
 
 @font-face {
-  font-family: "Myriad Pro";
-  src: url('/fonts/MyriadPro-Light.woff');
+  font-family: 'Myriad Pro Light';
+  src: url('/fonts/MyriadPro-Light.woff2') format('woff2'),
+      url('/fonts/MyriadPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-  font-family: "Myriad Pro Regular";
-  src: url('/fonts/MyriadPro-Regular.woff');
+  font-family: 'Myriad Pro Regular';
+  src: url('/fonts/MyriadPro-Regular.woff2') format('woff2'),
+      url('/fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
+
+
 @font-face {
-  font-family: "Univers";
-  src: url('/fonts/UniversCondensed.ttf');
+  font-family: 'Univers Condensed';
+  src: url('/fonts/UniversCondensed.woff2') format('woff2'),
+      url('/fonts/UniversCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 
 body {
-  font-family: "Myriad Pro";
+  font-family: "Myriad Pro Light";
   background-color: $light-blue;
   margin: 0;
   padding: 0;
   color: $dark-blue;
+}
+
+p
+{
+  font-family: "Myriad Pro Light";
+}
+
+h2
+{
+  font-family: "Myriad Pro Light";
+}
+
+h3
+{
+  font-family: "Myriad Pro Light";
+}
+
+h4
+{
+  font-family: "Myriad Pro Light";
 }
 
 html
