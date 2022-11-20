@@ -57,15 +57,20 @@ export default function LetzteHilfe() {
             
                 <aside className={styles.description_aside}>
                     <div className={styles.image}>
-                            <Image
-                            alt='Post-Its'
-                            src={"/images/letzte-hilfe/text-1.png"}
-                            layout="fill"
-                            objectFit='cover'
-                            quality={100}
-                            >
+                        <Link href={"https://www.letztehilfe.info"}>
+                            <a>
+                                <Image
+                                alt='Post-Its'
+                                src={"/images/letzte-hilfe/text-1.png"}
+                                layout="fill"
+                                objectFit='cover'
+                                quality={100}
+                                >
                                 
-                            </Image>
+                                </Image>
+                            </a>
+                        </Link>
+                            
                             
                     </div>
                     {/* <div className={styles.image}>
@@ -118,13 +123,19 @@ export default function LetzteHilfe() {
             
                 <aside className={styles.description_aside}>
                     <div className={styles.image}>
-                            <Image
+                        <Link href={"https://www.letztehilfe.info"}>
+                            <a>
+                                <Image
                                 alt='Post-Its'
                                 src={"/images/letzte-hilfe/text-1.png"}
                                 layout="fill"
                                 objectFit='cover'
                                 quality={100}
-                                />
+                                >
+                                
+                                </Image>
+                            </a>
+                        </Link>
                         
                     </div>
                 </aside>

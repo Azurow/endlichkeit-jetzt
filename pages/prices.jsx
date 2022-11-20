@@ -44,7 +44,7 @@ export default function prices() {
                 <li>
                     <div className={styles.offerContainer}>
                         <h3>Trauercafé</h3>
-                        <h4>Trauercafé</h4>
+                        <h4></h4>
                         <ul className={styles.offerList}>
                             <li>
                                 <p className={styles.offer}>Ohne Verzehr</p> <div className={styles.price}><h4>15€</h4></div>
@@ -54,42 +54,32 @@ export default function prices() {
                 </li>
                 <li>
                     <div className={styles.offerContainer}>
-                        <h3>Letzte Hilfe</h3>
-                        <h4>Kurse</h4>
+                        <h3>Letzte Hilfe Kurse</h3>
+                        <h4></h4>
                         <ul className={styles.offerList}>
                             <li>
-                                <p className={styles.offer}>Erwachsene und Kinder</p> <div className={styles.price}><h4>20€</h4></div> 
+                                <p className={styles.offer}>4x 45 Min</p> <div className={styles.price}><h4>20€</h4></div> 
                             </li>
                         </ul>
                     </div>
                 </li>
                 <li>
                     <div className={styles.offerContainer}>
-                        <h3>Beerdigungsbegleitung</h3>
-                        <h4>Für Kinder</h4>
+                        <h3>Preise nach Absprache, Wünschen und Aufwand für folgende Angebote: <br /><br /></h3>
                         <ul className={styles.offerList}>
                             <li>
-                                <p className={styles.offer}>inkl. Kennenlernen, Vorbesprechen und Begleitung am Tag der Trauerfreier</p> <div className={styles.price}><h4 >ab 250€</h4></div>
+                                <p className={styles.offer}>Beerdigungsbegleitung für Kinder</p>
+                            </li>
+                            <li>
+                                <p className={styles.offer}>Sterbebegleitung</p>
+                            </li>
+                            <li>
+                                <p className={styles.offer}>persönliche Begleitung über den Tod hinaus (z.B. Beerdigungsplanung) </p>
                             </li>
                         </ul>
                     </div>
                 </li>
-                <li>
-                    <div className={styles.offerContainer}>
-                        <h3>Endlichkeitsbegleitung</h3>
-                        <ul className={styles.offerList}>
-                            <li>
-                                <p className={styles.offer}>3 Besuche à 3 Stunden & telefonische Erreichbarkeit für die ganze Familie</p> <div className={styles.price}><h4>200€/Monat</h4></div>
-                            </li>
-                        </ul>
-                        <h4>Nach Endlichkeitsbegleitung</h4>
-                        <ul className={styles.offerList}>
-                            <li>
-                                <p className={styles.offer}>persönliche Begleitung über den Tod hinaus</p> <div className={styles.price}><h4>ab 100€/Monat</h4></div>
-                            </li>
-                        </ul>
-                    </div>
-                </li>
+                
             </ul>
         </main>
     </PageContainer>

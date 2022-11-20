@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import { useRouter } from 'next/router';
 import React, { useEffect, useRef, useState } from 'react'
 import emailjs from '@emailjs/browser';
 import styles from '../styles/Contact.module.scss'
@@ -12,16 +13,22 @@ function getRandomInt(min, max) {
 
 export default function contact() {
 
-  useEffect(() =>
-    {
-        if(window.innerWidth > 576)
-        {
-            window.scrollTo({
-                top: 1000,
-                behavior: "smooth",
-            });
-        }
-    }, [])
+  const router = useRouter();
+  const data = router.query;
+  const subjectInput = useRef();
+
+  useEffect(() => {
+    if (Object.keys(data)[0] != undefined) {
+      subjectInput.current.value = Object.keys(data)[0];
+    }
+
+    if (window.innerWidth > 576) {
+      window.scrollTo({
+        top: 1000,
+        behavior: "smooth",
+      });
+    }
+  }, [])
 
   const form = useRef();
 
@@ -30,13 +37,11 @@ export default function contact() {
 
   const safetyAnswer = useRef();
 
-  function randomizeSafetyNumbers()
-  {
+  function randomizeSafetyNumbers() {
     setSafetyNumbers([getRandomInt(0, 10), getRandomInt(0, 10)]);
   }
 
-  useEffect(() =>
-  {
+  useEffect(() => {
     randomizeSafetyNumbers();
   }, [])
 
@@ -44,8 +49,7 @@ export default function contact() {
     e.preventDefault();
     setResultMessage("Bitte warten sie...");
 
-    if(safetyAnswer.current.value != safetyNumbers.reduce((a, b) => a + b, 0))
-    {
+    if (safetyAnswer.current.value != safetyNumbers.reduce((a, b) => a + b, 0)) {
       alert("Sicherheitsabfrage falsch");
       setResultMessage("Sicherheitsfrage falsch");
       randomizeSafetyNumbers();
@@ -63,59 +67,59 @@ export default function contact() {
         setResultMessage(error)
         console.log(error.text);
       });
-      
-      randomizeSafetyNumbers();
+
+    randomizeSafetyNumbers();
   };
 
   return (
     <PageContainer>
-        <h2>Kontakt</h2>
-        <main className={styles.container}>
-            <div>
-              <div className={styles.image}>
-                  <Image src={'/images/contact/contact.jpg'} layout='fill' objectFit='cover'/>
-              </div>
-              <div >
-                <div className={styles.infos}>
-                  <p>+069 40586207</p>
-                  <p>Hallo@endlichkeit.jetzt</p>
-                  <p>Spessartstraße 12</p>
-                  <p>60385 Frankfurt am Main</p>
-                </div>
-              </div>
+      <h2>Kontakt</h2>
+      <main className={styles.container}>
+        <div>
+          <div className={styles.image}>
+            <Image src={'/images/contact/contact.jpg'} layout='fill' objectFit='cover' />
+          </div>
+          <div >
+            <div className={styles.infos}>
+              <p>Tel 069 40586207</p>
+              <p><a href="mailto:hallo@endlichkeit.jetzt">hallo@endlichkeit.jetzt</a></p>
+              <p>Spessartstraße 12</p>
+              <p>60385 Frankfurt am Main</p>
             </div>
-            
-            <form className={styles.form} ref={form} onSubmit={sendEmail}>
-              <label>Betreff</label>
-              <input className={styles.textinput} type="text"name="subject" autoComplete="off" required />
+          </div>
+        </div>
 
-              <label>Name</label>
-              <input className={styles.textinput} type="text"name="from_name" autoComplete="off" required />
+        <form className={styles.form} ref={form} onSubmit={sendEmail}>
+          <label>Betreff</label>
+          <input className={styles.textinput} type="text" name="subject" ref={subjectInput} autoComplete="off" required />
 
-              <label>Email</label>
-              <input className={styles.textinput} type="email"name="from_email" autoCorrect='off' required />
+          <label>Name</label>
+          <input className={styles.textinput} type="text" name="from_name" autoComplete="off" required />
 
-              <label>Telefon</label>
-              <input className={styles.textinput} type="number" name="from_number" autoCorrect='off' required />
+          <label>Email</label>
+          <input className={styles.textinput} type="email" name="from_email" autoCorrect='off' required />
 
-              <label>Ihre Nachricht an uns:</label>
-              <textarea name="message" rows={10}/>
+          <label>Telefon</label>
+          <input className={styles.textinput} type="number" name="from_number" autoCorrect='off' required />
 
-              <label>Sicherheitsfrage:</label>
-              <div className={styles.safetyContainer}>
-                <p>{safetyNumbers[0] + "+" + safetyNumbers[1]}</p>
-                <input ref={safetyAnswer} className={styles.safetyinput} type="text"name="safety" autoComplete="off" placeholder='Antwort...' required />
-              </div>
-              
-              <p className={styles.infotext}>Mit den Absenden des Formulars akzeptieren Sie unsere <a href="/legal">Datenschutzerklärung.</a></p>
+          <label>Ihre Nachricht an uns:</label>
+          <textarea name="message" rows={10} />
 
-              <button type="submit">Nachricht senden</button>
-            	
+          <label>Sicherheitsfrage:</label>
+          <div className={styles.safetyContainer}>
+            <p>{safetyNumbers[0] + "+" + safetyNumbers[1]}</p>
+            <input ref={safetyAnswer} className={styles.safetyinput} type="text" name="safety" autoComplete="off" placeholder='Antwort...' required />
+          </div>
 
-              <sub className={styles.resultMessage}>{resultMessage}</sub>
-            </form>
-            
-        </main>
+          <p className={styles.infotext}>Mit den Absenden des Formulars akzeptieren Sie unsere <a href="/legal">Datenschutzerklärung.</a></p>
+
+          <button type="submit">Nachricht senden</button>
+
+
+          <sub className={styles.resultMessage}>{resultMessage}</sub>
+        </form>
+
+      </main>
     </PageContainer>
   )
 }
