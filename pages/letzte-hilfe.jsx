@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Link from "next/link"
 import Image from 'next/image'
 import styles from '../styles/LetzteHilfe.module.scss'
 
@@ -8,6 +9,16 @@ import Button from '../components/Button'
 import Carousel from '../components/Carousel'
 
 export default function LetzteHilfe() {
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
 
     const [selectedOption, setOption] = useState(0);
 
@@ -20,7 +31,7 @@ export default function LetzteHilfe() {
             <meta charSet="UTF-8"></meta>
         </Head>
 
-        <h2>Letzte Hilfe - Am Ende wissen, wie es geht </h2>
+        <h2 id="title">Letzte Hilfe - Am Ende wissen, wie es geht </h2>
 
         <nav onChange={e => setOption(e.target.value)}>
             <label className={styles.nav_button}>
@@ -38,23 +49,31 @@ export default function LetzteHilfe() {
         <div className={selectedOption == 1 ? styles.hidden : styles.shown}>
             <section className={styles.description}>
                 <div className={styles.description_text}>
-                    <p>Der Abschied vom Leben ist der schwerste, den die Lebensreise für einen Menschen bereithält. Deshalb braucht es, wie auf allen schweren Wegen, jemanden, der die Hand reicht.</p>
-                    <p>Wir möchten Grundwissen vermitteln und ermutigen, sich Sterbenden zuzuwenden. Denn Zuwendung ist das, was wir alle am Ende des Lebens am meisten brauchen.</p>
-                    <p>Das Lebensende und Sterben unserer Angehörigen, Freunde und Nachbarn macht uns oft hilflos, deshalb bieten wir einen Kurs zur „Letzten Hilfe“ an. Unser Ziel ist es, Basiswissen, Orientierungen und einfache Handgriffe weiterzugeben. </p>
-                    <p>Im Kurs sprechen wir über die Normalität des Sterbens als Teil des Lebens, natürlich werden auch Patientenverfügung und Vorsorgevollmacht kurz angefügt. Wir thematisieren mögliche Leiden als Teil des Sterbeprozesses und wie wir lindern können. Zudem gehen wir darauf ein, wie man mit den schwereren, aber auch den leichteren Stunden umgeht. Wir überlegen abschließend gemeinsam, wie man Abschied nehmen kann und besprechen unsere Möglichkeiten und Grenzen.</p>
+                    <p>Der Abschied vom Leben ist der schwerste, den die Lebensreise für einen Menschen bereithält. Deshalb braucht es, wie auf allen schweren Wegen, jemanden, der die Hand reicht und stützt. </p>
+                    <p>Wir möchten Grundwissen vermitteln und ermutigen, sich Sterbenden zuzuwenden. Denn Zuwendung ist das, was wir alle am Ende des Lebens am meisten brauchen. </p>
+                    <p>Das Lebensende und Sterben unserer Angehörigen, Freunde und Nachbarn macht uns oft hilflos, deshalb bieten wir einen Kurs zur „Letzten Hilfe“ an. Unser Ziel ist es, Basiswissen, Orientierungen und einfache Handgriffe weiterzugeben.  </p>
+                    <p>Im Kurs sprechen wir über die Normalität des Sterbens als Teil des Lebens, natürlich werden auch Patientenverfügung und Vorsorgevollmacht kurz angefügt. Wir thematisieren mögliche Leiden als Teil des Sterbeprozesses und wie wir sie lindern können. Zudem gehen wir darauf ein, wie man mit den schwereren, aber auch den leichteren Stunden umgeht. Wir überlegen abschließend gemeinsam, wie man Abschied nehmen kann, und besprechen unsere Möglichkeiten und Grenzen. </p>
                 </div>
             
                 <aside className={styles.description_aside}>
                     <div className={styles.image}>
-                        <Image
-                        alt='Post-Its'
-                        src={"/images/letzte-hilfe/text-1.JPG"}
-                        layout="fill"
-                        objectFit='cover'
-                        quality={100}
-                        />
+                        <Link href={"https://www.letztehilfe.info"}>
+                            <a>
+                                <Image
+                                alt='Post-Its'
+                                src={"/images/letzte-hilfe/text-1.png"}
+                                layout="fill"
+                                objectFit='cover'
+                                quality={100}
+                                >
+                                
+                                </Image>
+                            </a>
+                        </Link>
+                            
+                            
                     </div>
-                    <div className={styles.image}>
+                    {/* <div className={styles.image}>
                         <Image
                             alt='Textmarker'
                             src={"/images/letzte-hilfe/text-2.JPG"}
@@ -62,7 +81,7 @@ export default function LetzteHilfe() {
                             objectFit='cover'
                             quality={100}
                             />
-                    </div>
+                    </div> */}
                 </aside>
             </section>
             <section className={styles.contents}>
@@ -104,22 +123,20 @@ export default function LetzteHilfe() {
             
                 <aside className={styles.description_aside}>
                     <div className={styles.image}>
-                        <Image
-                        alt='Post-Its'
-                        src={"/images/letzte-hilfe/text-1.JPG"}
-                        layout="fill"
-                        objectFit='cover'
-                        quality={100}
-                        />
-                    </div>
-                    <div className={styles.image}>
-                        <Image
-                            alt='Textmarker'
-                            src={"/images/letzte-hilfe/text-2.JPG"}
-                            layout="fill"
-                            objectFit='cover'
-                            quality={100}
-                            />
+                        <Link href={"https://www.letztehilfe.info"}>
+                            <a>
+                                <Image
+                                alt='Post-Its'
+                                src={"/images/letzte-hilfe/text-1.png"}
+                                layout="fill"
+                                objectFit='cover'
+                                quality={100}
+                                >
+                                
+                                </Image>
+                            </a>
+                        </Link>
+                        
                     </div>
                 </aside>
             </section>
@@ -135,7 +152,7 @@ export default function LetzteHilfe() {
                         <li>Leiden lindern</li>
                         <li>Abschied nehmen</li>
                     </ul>
-                    <Button text={"Buchen"} />
+                    <Button text={"Anfragen"} />
                     </div>
             </section>
         </div>

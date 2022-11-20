@@ -1,0 +1,94 @@
+@import 'utility/colors';
+
+.container
+{
+    font-family: Myriad Pro Light;
+    padding: 0;
+        list-style-type: none;
+        font-size: 24px;
+        li
+        {
+            margin-bottom: 1em;
+        }
+}
+
+.grid
+{
+    padding: 0;
+    display: grid;
+    gap: 1vw;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.grid > li
+{
+    // height: min-content;
+    padding:  2.5vw 0;
+    opacity: 86%;
+    background-color: $mid-blue;
+    border-radius: 10px;
+    border: solid 2px $mid-blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3
+    {
+        margin: 0;
+    }
+
+    h4
+    {
+        margin-bottom: 0.5em;
+    }
+}
+
+.grid > li:hover
+{
+    opacity: 100%;
+    transition: all 0.1s ease-in-out;
+}
+
+.offerList
+{
+    padding: 0;
+    li
+    {
+        display: flex;
+        justify-content: space-between;
+
+        h4, p
+        {
+            margin: 0;
+        }
+
+        p::before
+        {
+            content: "-> ";
+        }
+    }
+}
+
+.offerContainer
+{
+    padding: 0 1em;
+}
+
+.offer
+{
+    padding-right: 1em;
+}
+
+
+.price, .offer
+{
+    display: inline;
+}
+
+
+.price
+{
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center; /* align vertical */
+}

@@ -4,9 +4,19 @@ import RouteGuard from "../components/RouteGuard";
 import PageContainer from "../components/PageContainer";
 import NewsAdminPanel from "../components/NewsAdminPanel";
 import ServicesAdminPanel from '../components/ServicesAdminPanel';
+import { useEffect } from 'react'
 
 export default function admin() {
-
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
     return (
         <RouteGuard>
             <PageContainer>

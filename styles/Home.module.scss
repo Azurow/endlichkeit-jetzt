@@ -1,5 +1,10 @@
 @import 'utility/colors';
 
+.bold
+{
+  font-family: Myriad Pro Regular;
+}
+
 .about {
   display: grid;
   grid-template-columns: 2fr 1fr;

@@ -17,7 +17,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
 
     input {
         display: none;
@@ -34,7 +33,7 @@
 
 
         &_tab {
-            color: $mid-blue;
+            color: #81adc9;
             transition: all 0.5s;
             cursor: pointer;
 
@@ -46,10 +45,10 @@
     }
 
     &_sub {
-        font-size: 32px;
         width: 100%;
 
         ul {
+            
             text-align: center;
             list-style-type: none;
             padding: 0;
@@ -61,12 +60,13 @@
         }
 
         &_tab {
-            color: $mid-blue;
+            color: #81adc9;
             text-align: left;
             transition: all 0.25s;
             cursor: pointer;
 
             h3 {
+                font-size: 28px;
                 width: 100%;
             }
 
@@ -92,11 +92,10 @@
 
 .services_article {
     display: flex;
-    padding: 2.5vw 10vw;
-    min-height: 30vw;
+    padding: 0 10vw;
+    min-height: 20vw;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
 
     h3 {
         width: 100%;
@@ -105,9 +104,7 @@
 }
 
 .divider {
-    height: 1px;
-    width: 2rem;
-    background-color: $dark-blue;
+    font-size: 32px;
 }
 
 @media (max-width: 1500px) {

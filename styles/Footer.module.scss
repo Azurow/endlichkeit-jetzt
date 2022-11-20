@@ -1,6 +1,8 @@
 @import 'utility/colors';
 
 .footer {
+  font-family: Univers Condensed;
+  word-break: break-all;
   height: 30vw;
   display: grid;
   grid-template-rows: 7fr 1fr;
@@ -12,16 +14,39 @@
   }
 
   &_bottom {
+    min-height: 8em;
+    padding: 2em;
     background-color: $dark-blue;
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
     color: $light-blue;
   }
 }
 
+.button
+{
+    margin-top: 1vw;
+    padding: 0.75em;
+    border-radius: 20vh;
+    border: 0;
+    background-color: $dark-blue;
+    color: $mid-blue;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.button:hover
+{
+    transition: none;
+    color: $light-blue;
+}
+
 .mapContainer
 {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -30,6 +55,16 @@
     width: 90%;
     height: 80%;
   }
+}
+
+.subtext
+{
+  display: inline-block;
+  width: 50%;
+  opacity: 50%;
+  font-family: Myriad Pro;
+  word-break: normal;
+  font-size: 1vw;
 }
 
 .adress
@@ -71,11 +106,24 @@
   }
 }
 
+@media (max-width: 1200px) 
+{
+  .subtext
+  {
+    font-size: 1.5vw;
+  }
+}
+
 @media (max-width: 576px)
 {
+  .subtext
+  {
+    font-size: 2vw;
+  }
   .footer
   {
-    p 
+    
+    ul > li > p 
     {
       font-size: 12px;
     }

@@ -45,8 +45,8 @@ export default function News({}) {
                 <div className={styles.news_list_container}>
                     <ul className={styles.news_list}>
                         {posts.map((i, index) =>
-                            <li key={index}>
-                                <time>{i.date}</time>
+                            <li  key={index}>
+                                <time>{i.date + " Uhr"}</time>
                                 <h3>{i.title}</h3>
                                 <p>{i.description}</p>
                                 <button className={button.button} onClick={e => {openModal(i);}}>Mehr Dazu</button>

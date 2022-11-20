@@ -1,11 +1,61 @@
 @import 'utility/colors';
-@import url('https://fonts.cdnfonts.com/css/myriad-pro');
+
+@font-face {
+  font-family: 'Myriad Pro Light';
+  src: url('/fonts/MyriadPro-Light.woff2') format('woff2'),
+      url('/fonts/MyriadPro-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Myriad Pro Regular';
+  src: url('/fonts/MyriadPro-Regular.woff2') format('woff2'),
+      url('/fonts/MyriadPro-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'Univers Condensed';
+  src: url('/fonts/UniversCondensed.woff2') format('woff2'),
+      url('/fonts/UniversCondensed.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 body {
+  font-family: "Myriad Pro Light";
   background-color: $light-blue;
   margin: 0;
   padding: 0;
   color: $dark-blue;
+}
+
+p
+{
+  font-family: "Myriad Pro Light";
+}
+
+h2
+{
+  font-family: "Myriad Pro Light";
+}
+
+h3
+{
+  font-family: "Myriad Pro Light";
+}
+
+h4
+{
+  font-family: "Myriad Pro Light";
 }
 
 html
@@ -24,6 +74,16 @@ h2 {
 
 h3 {
   font-size: 32px;
+  font-weight: 50;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 50;
+}
+
+h4 {
+  font-size: 24px;
   font-weight: 50;
 }
 

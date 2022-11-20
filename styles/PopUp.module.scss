@@ -2,6 +2,7 @@
 
 .container
 {
+    white-space: pre-line;
     position: fixed;
     display: none;
     align-items: center;
@@ -12,6 +13,23 @@
     top: 0;
     left: 0;
     background-color: #003b5d80;
+}
+
+.button
+{
+    position: absolute;
+    background-color: $mid-blue;
+    color: $dark-blue;
+    border: none;
+    height: 2em;
+    width: 2em;
+    border-radius: 2em;
+}
+
+.button:hover
+{
+    background-color: $dark-blue;
+    color: $mid-blue;
 }
 
 .open
@@ -41,11 +59,26 @@
     .modal
     {
         width: 65vw;
+
+        
+        h2
+        {
+            font-size: 10vw;
+        }
+
+        p
+        {
+            font-size: 5vw;
+        }
     }
 }
 
 @media (max-width: 575.98px)
 {  
+    .button
+    {
+        margin-top: 5vw;
+    }
     .modal
     {
         padding: 0vw 5vw;

@@ -32,7 +32,7 @@ export default function Carousel() {
         <div className={`${styles.carousel_image} ${imageCounter === 2 ? styles.current : ""}`}>
             <Image
             alt='Bildercollage'
-            src={"/images/letzte-hilfe/carousel-2.jpg"}
+            src={"/images/letzte-hilfe/carousel-2.jpeg"}
             layout="fill"
             objectFit='cover'
             quality={100}

@@ -1,4 +1,4 @@
-import {React} from 'react'
+import {React, useEffect} from 'react'
 import Head from 'next/head';
 import { useRouter } from 'next/dist/client/router';
 import { auth} from '../utils/firebase'
@@ -7,6 +7,17 @@ import PageContainer from '../components/PageContainer'
 import styles from "../styles/Login.module.scss"
 
 export default function login() {
+
+    useEffect(() =>
+    {
+        if(window.innerWidth > 576)
+        {
+            window.scrollTo({
+                top: 1000,
+                behavior: "smooth",
+            });
+        }
+    }, [])
 
     const router = useRouter();
 

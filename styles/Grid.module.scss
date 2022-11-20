@@ -19,7 +19,8 @@
 
   .Picture
   {
-    overflow: hidden;
+    
+    overflow-y: scroll;
     padding: 0.5vw;
     background-color: $dark-blue;
     display: flex;
@@ -34,15 +35,20 @@
 
   .Picture > h2
   {
+    word-break: normal;
     margin: 0;
     opacity: 0%;
     z-index: 1;
+    font-size: 2vw;
   }
 
   .Picture > p
   {
+    word-break: normal;
+    margin-top: 0.25vw;
     opacity: 0%;
     z-index: 1;
+    font-size: 1.5vw;
   }
 
   .Picture:hover > h2
@@ -88,6 +94,15 @@
 
 @media (max-width: 992px) 
 {
+  .Picture > h2
+  {
+    font-size: 3vw;
+  }
+
+  .Picture > p
+  {
+    font-size: 2vw;
+  }
   .grid {
     margin: 5vw -5vw;
     
@@ -102,6 +117,15 @@
 
 @media (max-width: 768px) 
 {
+  .Picture > h2
+  {
+    font-size: 4vw;
+  }
+
+  .Picture > p
+  {
+    font-size: 3vw;
+  }
   .grid {
     margin: 5vw -10vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
@@ -112,7 +136,18 @@
 
 @media (max-width: 576px) 
 {
-  
+
+  .Picture > p
+  {
+    display: none;
+  }
+
+  .Picture
+  {
+    align-items: center;
+    justify-content: center;
+  }
+
   .grid {
     margin: 15vw -5vw;
   }
