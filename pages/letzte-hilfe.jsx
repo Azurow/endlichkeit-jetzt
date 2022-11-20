@@ -49,10 +49,10 @@ export default function LetzteHilfe() {
         <div className={selectedOption == 1 ? styles.hidden : styles.shown}>
             <section className={styles.description}>
                 <div className={styles.description_text}>
-                    <p>Der Abschied vom Leben ist der schwerste, den die Lebensreise für einen Menschen bereithält. Deshalb braucht es, wie auf allen schweren Wegen, jemanden, der die Hand reicht.</p>
-                    <p>Wir möchten Grundwissen vermitteln und ermutigen, sich Sterbenden zuzuwenden. Denn Zuwendung ist das, was wir alle am Ende des Lebens am meisten brauchen.</p>
-                    <p>Das Lebensende und Sterben unserer Angehörigen, Freunde und Nachbarn macht uns oft hilflos, deshalb bieten wir einen Kurs zur „Letzten Hilfe“ an. Unser Ziel ist es, Basiswissen, Orientierungen und einfache Handgriffe weiterzugeben. </p>
-                    <p>Im Kurs sprechen wir über die Normalität des Sterbens als Teil des Lebens, natürlich werden auch Patientenverfügung und Vorsorgevollmacht kurz angefügt. Wir thematisieren mögliche Leiden als Teil des Sterbeprozesses und wie wir lindern können. Zudem gehen wir darauf ein, wie man mit den schwereren, aber auch den leichteren Stunden umgeht. Wir überlegen abschließend gemeinsam, wie man Abschied nehmen kann und besprechen unsere Möglichkeiten und Grenzen.</p>
+                    <p>Der Abschied vom Leben ist der schwerste, den die Lebensreise für einen Menschen bereithält. Deshalb braucht es, wie auf allen schweren Wegen, jemanden, der die Hand reicht und stützt. </p>
+                    <p>Wir möchten Grundwissen vermitteln und ermutigen, sich Sterbenden zuzuwenden. Denn Zuwendung ist das, was wir alle am Ende des Lebens am meisten brauchen. </p>
+                    <p>Das Lebensende und Sterben unserer Angehörigen, Freunde und Nachbarn macht uns oft hilflos, deshalb bieten wir einen Kurs zur „Letzten Hilfe“ an. Unser Ziel ist es, Basiswissen, Orientierungen und einfache Handgriffe weiterzugeben.  </p>
+                    <p>Im Kurs sprechen wir über die Normalität des Sterbens als Teil des Lebens, natürlich werden auch Patientenverfügung und Vorsorgevollmacht kurz angefügt. Wir thematisieren mögliche Leiden als Teil des Sterbeprozesses und wie wir sie lindern können. Zudem gehen wir darauf ein, wie man mit den schwereren, aber auch den leichteren Stunden umgeht. Wir überlegen abschließend gemeinsam, wie man Abschied nehmen kann, und besprechen unsere Möglichkeiten und Grenzen. </p>
                 </div>
             
                 <aside className={styles.description_aside}>

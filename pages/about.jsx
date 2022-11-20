@@ -41,6 +41,17 @@ export default function about() {
                 </li>
 
                 <Divider/>
+                <li className={styles.person}>
+                    <div className={styles.image}>
+                        <Image alt='Annika' src={'/images/ueber-uns/annika.jpg'} width={225} height={300}/>
+                    </div>
+                    <div className={styles.person_description}>
+                        <h2>Annika Reuß</h2>
+                        <p>Ich bin Annika Reuß, Seelenbegleiterin, Letzte-Wünsche-Erfüllerin, Bestatterin der Herzen und Obertrösterin. Seit 2015 schaue ich genau hin, wenn es um Endlichkeit geht, und bin bei denen, die existenzielle Nöte haben: im Sterben, im Todsein, im Trauern. Unverständnis über unsere Abschieds- und Trauerkultur haben mich zu dem gebracht, was ich heute mit Sterbenden, Toten und Trauernden tue: furchterregende Ängste aushalten, Da-Sein, wenn sich keiner mehr traut zu kommen, Kleinig- und Großartigkeiten in Bestattungen unterbringen und Glitzer in die Trauersuppe streuen. Wenn‘s nicht mehr geht, bin ich da und begleite Sie.  
+                        </p>
+                    </div>
+                </li>
+                <Divider/>
 
                 <li className={styles.person}>
                     <div className={styles.image}>
@@ -48,26 +59,16 @@ export default function about() {
                     </div>
                     <div className={styles.person_description}>
                         <h2>Iris Rose</h2>
-                        <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. Mein Lebensmotto war schon immer, Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.
-Meine Erfahrungen, die ich nach dem Tod meines 2 1/2 Wochen alten Sohnes gemacht habe, von Einsamkeit über Sprachlosigkeit bis hin zur Isolation, haben den Wunsch verstärkt für Betroffene eine einfühlsame Ansprechpartnerin und Begleiterin zu sein.                                                                                                                                                                                                                                  Damals habe ich gemerkt, dass Geschwisterkinder mit ihrer Trauer und Gefühlen sehr alleine gelassen sind und ihnen gegenüber die Sprachlosigkeit noch größer ist. Das möchte ich ändern.
-Trauer fängt nicht erst mit dem Tod an und ich möchte für Sie alle, ob jung oder alt, unterstützend da sein.
+                        <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. Mein Lebensmotto war schon immer, Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.  <br />
 
+Meine Erfahrungen, die ich nach dem Tod meines zweieinhalb Wochen alten Sohnes gemacht habe, von Einsamkeit über Sprachlosigkeit bis hin zur Isolation, haben den Wunsch verstärkt, für Betroffene eine einfühlsame Ansprechpartnerin und Begleiterin zu sein.                                                                                                                                                                                                                                  Damals habe ich gemerkt, dass Geschwisterkinder mit ihrer Trauer und ihren Gefühlen sehr alleingelassen sind und ihnen gegenüber die Sprachlosigkeit noch größer als sonst schon ist. Das möchte ich ändern. 
+
+Trauer fängt nicht erst mit dem Tod an, und ich möchte für Sie alle, ob jung oder alt, unterstützend da sein. 
                         </p>
                     </div>
                 </li>
 
-                <Divider/>
 
-                <li className={styles.person}>
-                    <div className={styles.image}>
-                        <Image alt='Annika' src={'/images/ueber-uns/annika.jpg'} width={225} height={300}/>
-                    </div>
-                    <div className={styles.person_description}>
-                        <h2>Annika Reuß</h2>
-                        <p>„C‘est la vie. C‘est la Scheisse…“ Ich bin Annika Reuß, Seelenbegleiterin, letzte-Wünsche-Erfüllerin, Bestatterin der Herzen und Obertrösterin. Seit 2015 schaue ich genau hin, wenn es um Endlichkeit geht und bin bei denen, die existenzielle Nöte haben: im Sterben, im Totsein, im Trauern. Unverständnis über unsere Abschieds- und Trauerkultur haben mich zu dem gebracht, was ich heute mit Sterbenden, Toten und Trauernden tue: furchterregende Ängste aushalten, Dasein, wenn sich keiner mehr traut zu kommen, Kleinig- und Großartigekeiten in Bestattungen unterbringen und Glitzer in die Trauersuppe streuen. Wenn‘s nicht mehr geht, bin ich da und begleite Sie. 
-                        </p>
-                    </div>
-                </li>
             </ul>
         </main>
     </PageContainer>

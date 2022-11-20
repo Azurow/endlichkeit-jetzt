@@ -3,11 +3,12 @@
     width: 100%;
   
     time {
-      font-size: 32px;
+      font-size: 1.5em;
     }
   
     .news_list_container {
-      max-height: 1000vw;
+      max-height: 60em;
+      overflow-y: scroll;
     }
   
     .news_list {
@@ -19,6 +20,7 @@
   
       p {
         margin: 0;
+        font-size: 20px;
       }
   
       h3, time {
@@ -28,6 +30,20 @@
     }
   }
 
+  @media (max-width: 1000px) 
+{
+
+  .news
+  {
+    time
+    {
+      font-size: 2vw;
+    }
+  }
+  
+}
+
+
 // Medium devices (tablets, 768px and down)
 @media (max-width: 768px) 
 {
@@ -35,6 +51,10 @@
   .news
   {
     height: max-content;
+    time
+    {
+      font-size: 2.5vw;
+    }
   }
   
 }
@@ -46,6 +66,10 @@
   .news
   {
     text-align: center;
+    time
+    {
+      font-size: 4vw;
+    }
 
     &_list
     {

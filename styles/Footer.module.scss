@@ -14,8 +14,11 @@
   }
 
   &_bottom {
+    min-height: 8em;
+    padding: 2em;
     background-color: $dark-blue;
     display: flex;
+    align-items: flex-start;
     justify-content: space-around;
     color: $light-blue;
   }
