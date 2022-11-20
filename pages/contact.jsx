@@ -46,6 +46,7 @@ export default function contact() {
 
     if(safetyAnswer.current.value != safetyNumbers.reduce((a, b) => a + b, 0))
     {
+      alert("Sicherheitsabfrage falsch");
       setResultMessage("Sicherheitsfrage falsch");
       randomizeSafetyNumbers();
       return;
@@ -54,9 +55,11 @@ export default function contact() {
 
     emailjs.sendForm("default_service", 'template_8adfrze', form.current, 'tqCO8DbBi_JA42ARP')
       .then((result) => {
-        setResultMessage("Abgeschickt!");
+        alert("Versendet!");
+        setResultMessage("Versendet!");
         e.target.reset();
       }, (error) => {
+        alert(error);
         setResultMessage(error)
         console.log(error.text);
       });
@@ -89,10 +92,13 @@ export default function contact() {
               <label>Name</label>
               <input className={styles.textinput} type="text"name="from_name" autoComplete="off" required />
 
-              <label>Email:</label>
+              <label>Email</label>
               <input className={styles.textinput} type="email"name="from_email" autoCorrect='off' required />
 
-              <label>Nachricht:</label>
+              <label>Telefon</label>
+              <input className={styles.textinput} type="number" name="from_number" autoCorrect='off' required />
+
+              <label>Ihre Nachricht an uns:</label>
               <textarea name="message" rows={10}/>
 
               <label>Sicherheitsfrage:</label>
@@ -100,8 +106,11 @@ export default function contact() {
                 <p>{safetyNumbers[0] + "+" + safetyNumbers[1]}</p>
                 <input ref={safetyAnswer} className={styles.safetyinput} type="text"name="safety" autoComplete="off" placeholder='Antwort...' required />
               </div>
+              
+              <p className={styles.infotext}>Mit den Absenden des Formulars akzeptieren Sie unsere <a href="/legal">Datenschutzerklärung.</a></p>
 
-              <button type="submit">Abschicken</button>
+              <button type="submit">Nachricht senden</button>
+            	
 
               <sub className={styles.resultMessage}>{resultMessage}</sub>
             </form>
