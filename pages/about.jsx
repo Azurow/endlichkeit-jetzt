@@ -57,7 +57,7 @@ export default function about() {
                         </div>
                         <div className={styles.person_description}>
                             <h2>Iris Rose</h2>
-                            <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. Mein Lebensmotto war schon immer, Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.  <br /><br />
+                            <p>Ich bin Physiotherapeutin, Coach- und Businesscoach, Achtsamkeits-Trainerin und Trauerbegleiterin. Mein Lebensmotto lautet, Menschen zu begleiten, ihnen Halt und Energie zu geben, um sie wieder in ihre Leichtigkeit zu bringen.  <br /><br />
 
                                 Meine Erfahrungen, die ich nach dem Tod meines zweieinhalb Wochen alten Sohnes gemacht habe, von Einsamkeit über Sprachlosigkeit bis hin zur Isolation, haben den Wunsch verstärkt, für Betroffene eine einfühlsame Ansprechpartnerin und Begleiterin zu sein.                                                                                                                                                                                                                                  Damals habe ich gemerkt, dass Geschwisterkinder mit ihrer Trauer und ihren Gefühlen sehr alleingelassen sind und ihnen gegenüber die Sprachlosigkeit noch größer als sonst schon ist. Das möchte ich ändern.
 
