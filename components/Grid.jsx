@@ -47,7 +47,7 @@ export default function Grid() {
                 />
             </div>
             <div className={`${styles.Picture5} ${styles.Picture}`}>
-                <h2>palliative Physiotherapie</h2>
+                <h2>Palliative Physiotherapie</h2>
                 <p>Im Vordergrund stehen das Wohlbefinden und die innere Kraft des Patienten mit Berührung, Aktivität und Energiearbeit.</p>
                 <Image
                     alt='Bild des Endlichkeits-Teams'
