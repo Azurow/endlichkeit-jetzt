@@ -20,13 +20,11 @@ export default function legal() {
     <PageContainer>
       <main className={styles.container}>
         <h2>Impressum</h2>
-        <p>Endlichkeit.jetzt GbR</p>
-        <p>Spessartstraße 12</p>
-        <p>60385 Frankfurt am Main</p>
-        <p>Telefon: 069 405 862 07</p>
-        <p>E-Mail: info (at) endlichkeit.jetzt</p>
-        <h2>Umsatzsteuer</h2>
-        <p>Umsatzsteuer-Identifikationsnummer: DE01482662584</p>
+        <p>Endlichkeit.jetzt | Zentrum für Sterben･Tod･Trauer<br />Annika Reuß und Claudia Henrich GbR</p>
+        <p>Spessartstraße 12 <br /> 60385 Frankfurt am Main</p>
+        <p>Telefon: 069 405 862 07 <br /> E-Mail: info (at) endlichkeit.jetzt</p>
+        {/* <h2>Umsatzsteuer</h2>
+        <p>Umsatzsteuer-Identifikationsnummer: DE01482662584</p> */}
         <h2>Haftungsausschluss</h2>
         <h3>Haftung für Inhalte</h3>
         <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8 bis 10 TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur Entfernung oder Sperrung der Nutzung von Informationen nach den allgemeinen Gesetzen bleiben hiervon unberührt. Eine diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der Kenntnis einer konkreten Rechtsverletzung möglich. Bei Bekanntwerden von entsprechenden Rechtsverletzungen werden wir diese Inhalte umgehend entfernen.</p>
@@ -36,10 +34,8 @@ export default function legal() {
         <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers. Downloads und Kopien dieser Seite sind nur für den privaten, nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
         <h2>Datenschutzerklärung</h2>
         <p>Verantwortliche Stelle im Sinne der Datenschutzgesetze ist:</p>
-        <p>Endlichkeit.jetzt GbR</p>
-        <p>Annika Reuß und Claudia Henrich</p>
-        <p>Spessartstraße 12</p>
-        <p>60385 Frankfurt am Main</p>
+        <p>Endlichkeit.jetzt | Zentrum für Sterben･Tod･Trauer<br />Annika Reuß und Claudia Henrich GbR</p>
+        <p>Spessartstraße 12 <br /> 60385 Frankfurt am Main</p>
         <h3>Erfassung allgemeiner Informationen</h3>
         <p>Wenn Sie auf unsere Webseite zugreifen, werden automatisch Informationen allgemeiner Natur erfasst. Diese Informationen (Server-Logfiles) beinhalten etwa die Art des Webbrowsers, das verwendete Betriebssystem, den Domainnamen Ihres Internet Service Providers und Ähnliches. Hierbei handelt es sich ausschließlich um Informationen, welche keine Rückschlüsse auf Ihre Person zulassen. Diese Informationen sind technisch notwendig, um von Ihnen angeforderte Inhalte von Webseiten korrekt auszuliefern und fallen bei Nutzung des Internets zwingend an. Anonyme Informationen dieser Art werden von uns statistisch ausgewertet, um unseren Internetauftritt und die dahinterstehende Technik zu optimieren.</p>
         <h3>SSL-Verschlüsselung</h3>
