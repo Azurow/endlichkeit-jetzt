@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Divider from './Divider'
 import Link from 'next/link'
 import styles from '../styles/Navbar.module.scss'
 import Image from "next/image"
@@ -52,14 +53,6 @@ export default function Navbar() {
         <Link href={'/contact'}><a className={styles.link}>Kontakt</a></Link>
       </nav>
     </>
-  )
-}
-
-export function Divider() {
-  return (
-    <div className={styles.divider}>
-
-    </div>
   )
 }
 

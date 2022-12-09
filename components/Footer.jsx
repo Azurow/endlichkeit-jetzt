@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Divider from './Divider';
 import React, { useState } from 'react'
 import styles from '../styles/Footer.module.scss'
 
@@ -26,22 +27,16 @@ export default function Footer() {
         <nav className={styles.adress}>
           <ul>
             <li>
-              <p>endlichkeit.jetzt</p>
+              <p className={styles.title}>endlichkeit.jetzt</p>
               <p>Zentrum für Sterben･Tod･Trauer</p>
             </li>
             <li>
               <p>Spessartstraße 12</p>
-            </li>
-            <li>
               <p>60385 Frankfurt am Main</p>
-            </li>
-            <li>
               <p>Tel 069 40586207</p>
             </li>
             <li>
               <p>info@endlichkeit.jetzt</p>
-            </li>
-            <li>
               <p>www.endlichkeit.jetzt</p>
             </li>
             <li>
@@ -53,6 +48,7 @@ export default function Footer() {
       <div className={styles.footer_bottom}>
         <div className={styles.links}>
           <Link href={"/legal"}><a href="" className={styles.link}>Impressum</a></Link>
+          <Divider />
           <Link href={"/legal"}><a href="" className={styles.link}>Datenschutzerklärung</a></Link>
         </div>
       </div>

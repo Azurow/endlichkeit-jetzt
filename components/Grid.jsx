@@ -27,7 +27,7 @@ export default function Grid() {
                 />
             </div>
             <div className={`${styles.Picture3} ${styles.Picture}`}>
-                <h2>Trauercafé im Café Menthe</h2>
+                <h2>Trauercafé</h2>
                 <p>In einem geschützten Rahmen können Sie sich mit anderen Trauernden austauschen. Der Nachmittag wird mit Angeboten und Anregungen für den Alltag begleitet und bietet Inspirationen und Impulse, die Kraft für diese Extremsituation geben sollen.</p>
                 <Image
                     alt='Bild des Endlichkeits-Teams'
