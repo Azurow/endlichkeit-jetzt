@@ -1,15 +1,15 @@
 import styles from "../styles/News.module.scss"
 import button from "../styles/Button.module.scss"
 import { React, useState, useEffect } from 'react'
-import { collection, getDocs, orderBy, query, Timestamp } from "firebase/firestore"
+import { collection, getDocs, orderBy, query} from "firebase/firestore"
 import { firestore } from "../utils/firebase"
 import PopUp from "./PopUp";
 
-export default function News({}) {
+export default function News(posts) {
 
     const [modalOpen, setModalOpen] = useState(false);
     const [modalPost, setModalPost] = useState({})
-    const [posts, setPosts] = useState([{ title: "hi" }])
+    // const [posts, setPosts] = useState([{}])
 
     const openModal = (post) =>
     {
@@ -17,26 +17,26 @@ export default function News({}) {
         setModalPost(post)
     }
 
-    const updatePosts = () => {
-        const colRef = collection(firestore, "posts")
-        const postQuery = query(colRef, orderBy("date", "asc")); //limit(3) also possible
+    // const updatePosts = () => {
+    //     const colRef = collection(firestore, "posts")
+    //     const postQuery = query(colRef, orderBy("date", "asc")); //limit(3) also possible
 
-        getDocs(postQuery, colRef)
-            .then((snapshot) => {
-                let queriedPosts = [];
-                snapshot.docs.forEach((doc) => {
-                    queriedPosts.push({ ...doc.data(), date: doc.data().date.toDate().toLocaleDateString("de-DE", { weekday: 'long', month: 'long', day: 'numeric', hour: "numeric", minute: "numeric" }), id: doc.id });
-                })
-                setPosts(queriedPosts);
-            })
-            .catch(err => {
-                console.log(err.message);
-            })
-    }
+    //     getDocs(postQuery, colRef)
+    //         .then((snapshot) => {
+    //             let queriedPosts = [];
+    //             snapshot.docs.forEach((doc) => {
+    //                 queriedPosts.push({ ...doc.data(), date: doc.data().date.toDate().toLocaleDateString("de-DE", { weekday: 'long', month: 'long', day: 'numeric', hour: "numeric", minute: "numeric" }), id: doc.id });
+    //             })
+    //             setPosts(queriedPosts);
+    //         })
+    //         .catch(err => {
+    //             console.log(err.message);
+    //         })
+    // }
 
-    useEffect(() => {
-        updatePosts();
-    }, [])
+    // useEffect(() => {
+    //     updatePosts();
+    // }, [])
 
     return (
         <>
@@ -44,7 +44,7 @@ export default function News({}) {
                 <h2>Aktuelles</h2>
                 <div className={styles.news_list_container}>
                     <ul className={styles.news_list}>
-                        {posts.map((i, index) =>
+                        {posts.posts.map((i, index) =>
                             <li  key={index}>
                                 <time>{i.date + " Uhr"}</time>
                                 <h3>{i.title}</h3>
@@ -52,7 +52,7 @@ export default function News({}) {
                                 <button className={button.button} onClick={e => {openModal(i);}}>Mehr Dazu</button>
                             </li>
                         )}
-                        {posts.length == 0 && <p>Keine aktuellen Nachrichten...</p>}
+                        {posts.posts.length == 0 && <p>Keine aktuellen Nachrichten...</p>}
                     </ul>
                 </div>
 
